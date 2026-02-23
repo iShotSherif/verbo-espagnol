@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verbo &#127466;&#127480; — Apprends l'espagnol</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      min-height: 100%; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: linear-gradient(160deg, #0f1628 0%, #1c2d50 100%);
+      color: white;
+    }
+    body { display: flex; flex-direction: column; align-items: center; padding: 60px 24px 80px; }
+
+    .flag  { font-size: 3rem; }
+    h1     { font-size: 3.2rem; font-weight: 900; letter-spacing: -2px; margin-top: 10px; }
+    h1 em  { color: #f39c12; font-style: normal; }
+    .sub   { font-size: 1rem; color: rgba(255,255,255,.5); margin-top: 8px; text-align: center; }
+
+    .cards {
+      display: flex; gap: 20px; margin-top: 52px; flex-wrap: wrap; justify-content: center;
+      max-width: 780px; width: 100%;
+    }
+
+    .card {
+      flex: 1; min-width: 280px; max-width: 360px;
+      border-radius: 20px; padding: 28px 26px;
+      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.1);
+      display: flex; flex-direction: column; gap: 10px;
+      text-decoration: none; color: white;
+      transition: transform .18s, box-shadow .18s;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,.35); }
+
+    .card-icon  { font-size: 2.6rem; }
+    .card-title { font-size: 1.35rem; font-weight: 800; margin-top: 4px; }
+    .card-desc  { font-size: .87rem; color: rgba(255,255,255,.55); line-height: 1.5; flex: 1; }
+
+    .card-btn {
+      display: inline-block; margin-top: 14px; padding: 11px 0; border-radius: 12px;
+      font-size: .88rem; font-weight: 700; text-align: center;
+    }
+    .btn-game   { background: #c0392b; }
+    .btn-fiches { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); }
+
+    .features {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px;
+    }
+    .tag {
+      font-size: .7rem; padding: 3px 9px; border-radius: 20px;
+      background: rgba(255,255,255,.1); color: rgba(255,255,255,.55);
+    }
+
+    footer {
+      margin-top: 70px; font-size: .75rem; color: rgba(255,255,255,.2); text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="flag">&#127466;&#127480;</div>
+  <h1>Verb<em>o</em></h1>
+  <p class="sub">56 verbes espagnols essentiels — apprends par le jeu ou avec des fiches imprimables</p>
+
+  <div class="cards">
+
+    <a class="card" href="verbo_game.html">
+      <div class="card-icon">&#127918;</div>
+      <div class="card-title">Jeu TikTok-style</div>
+      <div class="card-desc">
+        Lance un run, traduis les verbes un par un. Une erreur et tu recommences de zéro.
+        Bats ton record !
+      </div>
+      <div class="features">
+        <span class="tag">&#128293; 16 listes</span>
+        <span class="tag">&#128293; Records</span>
+        <span class="tag">&#128161; Indices</span>
+        <span class="tag">&#128241; Mobile</span>
+      </div>
+      <div class="card-btn btn-game">&#9654; Jouer maintenant</div>
+    </a>
+
+    <a class="card" href="fiches_verbes.html">
+      <div class="card-icon">&#128218;</div>
+      <div class="card-title">Fiches de révision</div>
+      <div class="card-desc">
+        Cartes interactives à retourner avec les conjugaisons complètes, l'imparfait,
+        le prétérit et des phrases d'exemple. Version imprimable incluse.
+      </div>
+      <div class="features">
+        <span class="tag">&#128424; Imprimable</span>
+        <span class="tag">&#10003; Suivi maîtrisés</span>
+        <span class="tag">&#128256; Mélanger</span>
+      </div>
+      <div class="card-btn btn-fiches">&#128218; Ouvrir les fiches</div>
+    </a>
+
+  </div>
+
+  <footer>
+    56 verbes · Essentiels &amp; Courants · Thèmes &amp; Grammaire<br>
+    Fait avec &#10084; pour apprendre l'espagnol à Bilbao
+  </footer>
+
+</body>
+</html>
