@@ -4,23 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fiches Verbes Espagnols</title>
+  <link rel="stylesheet" href="shared/style.css">
   <style>
-    /* ── Reset & Base ── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --red:   #c0392b;
-      --red2:  #922b21;
-      --gold:  #f39c12;
-      --dark:  #1a2744;
-      --bg:    #f5f0e8;
-      --card-w: 340px;
-      --card-h: 275px;
-    }
-    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: #1a1a2e; }
+    body { background: var(--bg-light); color: #1a1a2e; }
 
     /* ── Header ── */
     header {
-      background: linear-gradient(135deg, var(--red), var(--red2));
+      background: linear-gradient(135deg, var(--red), var(--red-dark));
       color: white; padding: 14px 28px;
       display: flex; justify-content: space-between; align-items: center;
     }
@@ -37,9 +27,9 @@
       font-size: 0.82rem; font-weight: 700; transition: transform .15s, box-shadow .15s;
     }
     .btn:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,.18); }
-    .btn-red    { background: var(--red);  color: white; }
-    .btn-dark   { background: var(--dark); color: white; }
-    .btn-gold   { background: var(--gold); color: white; }
+    .btn-red    { background: var(--red);      color: white; }
+    .btn-dark   { background: var(--bg-card);  color: white; }
+    .btn-gold   { background: var(--gold);     color: white; }
     .btn-out    { background: transparent; border: 2px solid var(--red); color: var(--red); }
     .filter-group { display: flex; gap: 6px; margin-left: auto; }
     .fbtn {
@@ -56,6 +46,7 @@
     }
 
     /* ── Flip Card ── */
+    :root { --card-w: 340px; --card-h: 275px; }
     .flip-card {
       width: var(--card-w); height: var(--card-h);
       perspective: 1200px; position: relative;
@@ -73,7 +64,7 @@
 
     /* Front */
     .fc-front { background: white; border-top: 5px solid var(--red); display: flex; flex-direction: column; }
-    .fc-front.learned-card { border-top-color: #27ae60; }
+    .fc-front.learned-card { border-top-color: var(--green); }
     .v-name  { font-size: 1.85rem; font-weight: 900; color: var(--red); line-height: 1; }
     .v-trans { font-size: 0.82rem; color: #888; font-style: italic; margin-top: 2px; }
     .v-badge {
@@ -90,7 +81,7 @@
     .b-input {
       flex: 1; border: none; border-bottom: 1.5px solid #e0e0e0;
       background: transparent; font-family: inherit; font-size: 0.82rem;
-      color: var(--dark); outline: none; padding: 0 2px; height: 20px; min-width: 0;
+      color: var(--bg-card); outline: none; padding: 0 2px; height: 20px; min-width: 0;
     }
     .b-input:focus { border-bottom-color: var(--red); }
     .reveal-btn {
@@ -98,7 +89,7 @@
       background: var(--red); color: white; border: none; border-radius: 7px;
       font-size: 0.75rem; font-weight: 700; cursor: pointer; letter-spacing: .3px;
     }
-    .reveal-btn:hover { background: var(--red2); }
+    .reveal-btn:hover { background: var(--red-dark); }
     .back-actions {
       display: flex; gap: 8px; margin-top: auto; padding-top: 6px;
     }
@@ -108,22 +99,22 @@
     }
     .back-btn-ret { background: rgba(255,255,255,.12); color: rgba(255,255,255,.8); }
     .back-btn-ret:hover { background: rgba(255,255,255,.22); }
-    .back-btn-ok  { background: #27ae60; color: white; }
-    .back-btn-ok:hover { background: #1e8449; }
+    .back-btn-ok  { background: var(--green); color: white; }
+    .back-btn-ok:hover { background: var(--green-dark); }
     .flip-card.learned .back-btn-ok { background: #888; }
     .check-badge {
       position: absolute; top: 10px; right: 12px;
-      background: #27ae60; color: white; border-radius: 50%;
+      background: var(--green); color: white; border-radius: 50%;
       width: 22px; height: 22px; font-size: 0.7rem;
       display: flex; align-items: center; justify-content: center;
       opacity: 0; transition: opacity .3s;
     }
     .flip-card.learned .check-badge { opacity: 1; }
-    .flip-card.learned .v-name { color: #27ae60; }
+    .flip-card.learned .v-name { color: var(--green); }
 
     /* Back */
     .fc-back {
-      background: var(--dark); color: white;
+      background: var(--bg-card); color: white;
       transform: rotateY(180deg); display: flex; flex-direction: column;
     }
     .fc-back .v-name  { color: var(--gold); }
@@ -163,7 +154,6 @@
         border-radius: 8px; padding: 6mm 6mm; overflow: hidden;
         display: flex; flex-direction: column;
       }
-      /* Front print card */
       .pc-f { border: 1.5px solid #ddd; border-top: 4px solid #c0392b; }
       .pc-inf  { font-size: 24pt; font-weight: 900; color: #c0392b; line-height: 1; }
       .pc-tr   { font-size: 9pt; color: #888; font-style: italic; margin-bottom: 6mm; }
@@ -174,7 +164,6 @@
       .pc-pro   { color: #bbb; font-size: 7.5pt; align-self: center; text-align: right; }
       .pc-blank { border-bottom: 1pt solid #ddd; height: 18pt; }
 
-      /* Back print card */
       .pc-b { background: #1a2744 !important; color: white !important; border: none; }
       .pc-b .pc-inf { color: #f39c12 !important; }
       .pc-b .pc-tr  { color: rgba(255,255,255,.55) !important; margin-bottom: 3mm; }
@@ -208,8 +197,8 @@
   <button class="btn btn-gold" onclick="resetLearned()">&#8635; Réinitialiser</button>
   <div class="filter-group">
     <button class="fbtn active" onclick="filterGroup('all',this)">Tous</button>
-    <button class="fbtn" onclick="filterGroup('Essentiels',this)">Essentiels</button>
-    <button class="fbtn" onclick="filterGroup('Courants',this)">Courants</button>
+    <button class="fbtn" onclick="filterGroup('E',this)">Essentiels</button>
+    <button class="fbtn" onclick="filterGroup('C',this)">Courants</button>
   </div>
   <span id="progress">0 / 56 maîtrisés</span>
 </div>
@@ -217,292 +206,9 @@
 <div id="card-grid" class="card-grid"></div>
 <div id="print-section" class="print-section"></div>
 
+<script src="data/verbs.js"></script>
 <script>
 const PRONOUNS = ['yo','tú','él/ella','nosotros','vosotros','ellos'];
-
-const VERBS = [
-  // ═══════════════ ESSENTIELS ═══════════════
-  { g:'Essentiels', inf:'Ser',       tr:'être (permanent)',
-    conj:['soy','eres','es','somos','sois','son'],
-    imp:'era', ps:'fui',
-    ex:['Soy francés.','Somos buenos amigos.','Es médico.'] },
-
-  { g:'Essentiels', inf:'Estar',     tr:'être (état / lieu)',
-    conj:['estoy','estás','está','estamos','estáis','están'],
-    imp:'estaba', ps:'estuve',
-    ex:['Estoy cansado.','¿Estás bien?','El libro está en la mesa.'] },
-
-  { g:'Essentiels', inf:'Tener',     tr:'avoir',
-    conj:['tengo','tienes','tiene','tenemos','tenéis','tienen'],
-    imp:'tenía', ps:'tuve',
-    ex:['Tengo hambre.','Tenemos una reunión.','¿Tienes un momento?'] },
-
-  { g:'Essentiels', inf:'Hacer',     tr:'faire',
-    conj:['hago','haces','hace','hacemos','hacéis','hacen'],
-    imp:'hacía', ps:'hice',
-    ex:['¿Qué haces?','Hace calor.','Hago deporte los lunes.'] },
-
-  { g:'Essentiels', inf:'Ir',        tr:'aller',
-    conj:['voy','vas','va','vamos','vais','van'],
-    imp:'iba', ps:'fui',
-    ex:['Voy al trabajo.','Vamos a comer.','¿A dónde vas?'] },
-
-  { g:'Essentiels', inf:'Venir',     tr:'venir',
-    conj:['vengo','vienes','viene','venimos','venís','vienen'],
-    imp:'venía', ps:'vine',
-    ex:['Vengo ahora.','¿Vienes al bar?','Vienen mañana.'] },
-
-  { g:'Essentiels', inf:'Poder',     tr:'pouvoir',
-    conj:['puedo','puedes','puede','podemos','podéis','pueden'],
-    imp:'podía', ps:'pude',
-    ex:['¿Puedes ayudarme?','¿Puedo sentarme aquí?','Podemos quedar el sábado.'] },
-
-  { g:'Essentiels', inf:'Querer',    tr:'vouloir / aimer',
-    conj:['quiero','quieres','quiere','queremos','queréis','quieren'],
-    imp:'quería', ps:'quise',
-    ex:['Quiero un café.','Te quiero.','¿Quieres más?'] },
-
-  { g:'Essentiels', inf:'Decir',     tr:'dire',
-    conj:['digo','dices','dice','decimos','decís','dicen'],
-    imp:'decía', ps:'dije',
-    ex:['¿Qué dices?','Te lo dije.','Dice que no puede.'] },
-
-  { g:'Essentiels', inf:'Ver',       tr:'voir',
-    conj:['veo','ves','ve','vemos','veis','ven'],
-    imp:'veía', ps:'vi',
-    ex:['Te veo luego.','¿Ves la tele?','La veo en el trabajo.'] },
-
-  { g:'Essentiels', inf:'Dar',       tr:'donner',
-    conj:['doy','das','da','damos','dais','dan'],
-    imp:'daba', ps:'di',
-    ex:['¿Me das un boli?','Te doy mi número.','¡Dale!'] },
-
-  { g:'Essentiels', inf:'Saber',     tr:'savoir',
-    conj:['sé','sabes','sabe','sabemos','sabéis','saben'],
-    imp:'sabía', ps:'supe',
-    ex:['No sé.','¿Sabes dónde está?','Sabe cocinar muy bien.'] },
-
-  { g:'Essentiels', inf:'Conocer',   tr:'connaître',
-    conj:['conozco','conoces','conoce','conocemos','conocéis','conocen'],
-    imp:'conocía', ps:'—',
-    ex:['Conozco un buen bar.','¿Conoces este restaurante?','No la conozco bien.'] },
-
-  { g:'Essentiels', inf:'Hablar',    tr:'parler',
-    conj:['hablo','hablas','habla','hablamos','habláis','hablan'],
-    imp:'hablaba', ps:'hablé',
-    ex:['Hablo español.','¿Hablas inglés?','Hablamos por teléfono.'] },
-
-  { g:'Essentiels', inf:'Comer',     tr:'manger',
-    conj:['como','comes','come','comemos','coméis','comen'],
-    imp:'comía', ps:'comí',
-    ex:['¿Comemos fuera?','Como a las 2.','¿Qué comes hoy?'] },
-
-  { g:'Essentiels', inf:'Beber',     tr:'boire',
-    conj:['bebo','bebes','bebe','bebemos','bebéis','beben'],
-    imp:'bebía', ps:'bebí',
-    ex:['Tomo un café.','¿Qué bebes?','Bebo agua con las comidas.'] },
-
-  { g:'Essentiels', inf:'Pedir',     tr:'demander / commander',
-    conj:['pido','pides','pide','pedimos','pedís','piden'],
-    imp:'pedía', ps:'pedí',
-    ex:['Pido una caña.','¿Qué pides?','Piden la cuenta.'] },
-
-  { g:'Essentiels', inf:'Salir',     tr:'sortir',
-    conj:['salgo','sales','sale','salimos','salís','salen'],
-    imp:'salía', ps:'salí',
-    ex:['Salgo esta noche.','Salimos juntos el viernes.','¿A qué hora sale el tren?'] },
-
-  { g:'Essentiels', inf:'Llegar',    tr:'arriver',
-    conj:['llego','llegas','llega','llegamos','llegáis','llegan'],
-    imp:'llegaba', ps:'llegué',
-    ex:['Llego en 5 min.','El avión llega a las 3.','Llegamos tarde.'] },
-
-  { g:'Essentiels', inf:'Volver',    tr:'revenir',
-    conj:['vuelvo','vuelves','vuelve','volvemos','volvéis','vuelven'],
-    imp:'volvía', ps:'volví',
-    ex:['Vuelvo tarde.','Vuelvo enseguida.','¿Cuándo vuelves?'] },
-
-  { g:'Essentiels', inf:'Dormir',    tr:'dormir',
-    conj:['duermo','duermes','duerme','dormimos','dormís','duermen'],
-    imp:'dormía', ps:'dormí',
-    ex:['Duermo poco.','El niño duerme mucho.','¿Cuántas horas duermes?'] },
-
-  { g:'Essentiels', inf:'Levantarse', tr:'se lever',
-    conj:['me levanto','te levantas','se levanta','nos levantamos','os levantáis','se levantan'],
-    imp:'me levantaba', ps:'me levanté',
-    ex:['Me levanto a las 7.','Los fines de semana me levanto tarde.','¿A qué hora te levantas?'] },
-
-  { g:'Essentiels', inf:'Sentarse',  tr:"s'asseoir",
-    conj:['me siento','te sientas','se sienta','nos sentamos','os sentáis','se sientan'],
-    imp:'me sentaba', ps:'me senté',
-    ex:['Siéntate aquí.','Siéntense, por favor.','Me siento siempre aquí.'] },
-
-  { g:'Essentiels', inf:'Comprar',   tr:'acheter',
-    conj:['compro','compras','compra','compramos','compráis','compran'],
-    imp:'compraba', ps:'compré',
-    ex:['Voy a comprar pan.','Compro el billete en línea.','¿Dónde compramos la comida?'] },
-
-  { g:'Essentiels', inf:'Pagar',     tr:'payer',
-    conj:['pago','pagas','paga','pagamos','pagáis','pagan'],
-    imp:'pagaba', ps:'pagué',
-    ex:['Pago yo.','¿Pagamos con tarjeta?','¿Pagamos a medias?'] },
-
-  { g:'Essentiels', inf:'Gustar',    tr:'plaire — me gusta = j\'aime',
-    conj:['me gusta','te gusta','le gusta','nos gusta','os gusta','les gusta'],
-    imp:'me gustaba', ps:'me gustó',
-    ex:['Me gusta el txakoli.','¿Te gusta el fútbol?','Me gustan las tapas.'] },
-
-  // ═══════════════ COURANTS ═══════════════
-  { g:'Courants', inf:'Vivir',       tr:'vivre',
-    conj:['vivo','vives','vive','vivimos','vivís','viven'],
-    imp:'vivía', ps:'viví',
-    ex:['Vivo en Bilbao.','¿Dónde vives?','Vive solo.'] },
-
-  { g:'Courants', inf:'Trabajar',    tr:'travailler',
-    conj:['trabajo','trabajas','trabaja','trabajamos','trabajáis','trabajan'],
-    imp:'trabajaba', ps:'trabajé',
-    ex:['Trabajo de lunes a viernes.','¿Dónde trabajas?','Trabajamos en equipo.'] },
-
-  { g:'Courants', inf:'Estudiar',    tr:'étudier',
-    conj:['estudio','estudias','estudia','estudiamos','estudiáis','estudian'],
-    imp:'estudiaba', ps:'estudié',
-    ex:['Estudio español por las tardes.','Estudia medicina.','¿Estudias mucho?'] },
-
-  { g:'Courants', inf:'Aprender',    tr:'apprendre',
-    conj:['aprendo','aprendes','aprende','aprendemos','aprendéis','aprenden'],
-    imp:'aprendía', ps:'aprendí',
-    ex:['Estoy aprendiendo euskera.','Aprende rápido.','Aprendemos juntos.'] },
-
-  { g:'Courants', inf:'Enseñar',     tr:'enseigner / montrer',
-    conj:['enseño','enseñas','enseña','enseñamos','enseñáis','enseñan'],
-    imp:'enseñaba', ps:'enseñé',
-    ex:['¿Me enseñas el camino?','Enseña matemáticas.','¿Me enseñas a bailar?'] },
-
-  { g:'Courants', inf:'Escribir',    tr:'écrire',
-    conj:['escribo','escribes','escribe','escribimos','escribís','escriben'],
-    imp:'escribía', ps:'escribí',
-    ex:['Escribo un WhatsApp.','Escribe muy bien.','¿Me escribes la dirección?'] },
-
-  { g:'Courants', inf:'Leer',        tr:'lire',
-    conj:['leo','lees','lee','leemos','leéis','leen'],
-    imp:'leía', ps:'leí',
-    ex:['Leo el periódico todos los días.','Lee mucho en verano.','¿Lees en español?'] },
-
-  { g:'Courants', inf:'Escuchar',    tr:'écouter',
-    conj:['escucho','escuchas','escucha','escuchamos','escucháis','escuchan'],
-    imp:'escuchaba', ps:'escuché',
-    ex:['Escucho música en el metro.','Escucha, tengo una idea.','¿Escuchas Radio 3?'] },
-
-  { g:'Courants', inf:'Mirar',       tr:'regarder',
-    conj:['miro','miras','mira','miramos','miráis','miran'],
-    imp:'miraba', ps:'miré',
-    ex:['Mira esto en el móvil.','Mira qué tiempo hace.','Miramos el menú.'] },
-
-  { g:'Courants', inf:'Buscar',      tr:'chercher',
-    conj:['busco','buscas','busca','buscamos','buscáis','buscan'],
-    imp:'buscaba', ps:'busqué',
-    ex:['Busco las llaves.','Busca trabajo.','¿Buscas algo en concreto?'] },
-
-  { g:'Courants', inf:'Encontrar',   tr:'trouver / rencontrer',
-    conj:['encuentro','encuentras','encuentra','encontramos','encontráis','encuentran'],
-    imp:'encontraba', ps:'encontré',
-    ex:['He encontrado un piso barato.','¿Encuentras la calle?','No encuentro mi cartera.'] },
-
-  { g:'Courants', inf:'Perder',      tr:'perdre / rater',
-    conj:['pierdo','pierdes','pierde','perdemos','perdéis','pierden'],
-    imp:'perdía', ps:'perdí',
-    ex:['He perdido el autobús.','Pierdo siempre el paraguas.','¿Has perdido el móvil?'] },
-
-  { g:'Courants', inf:'Ganar',       tr:'gagner (argent / match)',
-    conj:['gano','ganas','gana','ganamos','ganáis','ganan'],
-    imp:'ganaba', ps:'gané',
-    ex:['Gano poco pero estoy contento.','Ganamos el partido.','¿Cuánto ganas al mes?'] },
-
-  { g:'Courants', inf:'Gastar',      tr:'dépenser',
-    conj:['gasto','gastas','gasta','gastamos','gastáis','gastan'],
-    imp:'gastaba', ps:'gasté',
-    ex:['Gasto mucho en comida fuera.','¿En qué gastas más?','No gastes tanto.'] },
-
-  { g:'Courants', inf:'Ahorrar',     tr:'économiser',
-    conj:['ahorro','ahorras','ahorra','ahorramos','ahorráis','ahorran'],
-    imp:'ahorraba', ps:'ahorré',
-    ex:['Estoy ahorrando para viajar.','Hay que ahorrar.','¿Ahorras algo?'] },
-
-  { g:'Courants', inf:'Llevar',      tr:'porter / emmener / ça fait…',
-    conj:['llevo','llevas','lleva','llevamos','lleváis','llevan'],
-    imp:'llevaba', ps:'llevé',
-    ex:['Llevo 2 años aquí.','Lleva una chaqueta roja.','¿Cuánto tiempo llevas aquí?'] },
-
-  { g:'Courants', inf:'Traer',       tr:'apporter',
-    conj:['traigo','traes','trae','traemos','traéis','traen'],
-    imp:'traía', ps:'traje',
-    ex:['Trae pan del súper.','¿Traes algo para picar?','Trae la factura.'] },
-
-  { g:'Courants', inf:'Poner',       tr:'mettre / poser',
-    conj:['pongo','pones','pone','ponemos','ponéis','ponen'],
-    imp:'ponía', ps:'puse',
-    ex:['Pongo la mesa.','¿Ponemos música?','Pon la tele.'] },
-
-  { g:'Courants', inf:'Ponerse',     tr:'se mettre (habit / devenir)',
-    conj:['me pongo','te pones','se pone','nos ponemos','os ponéis','se ponen'],
-    imp:'me ponía', ps:'me puse',
-    ex:['Me pongo el abrigo.','Se pone nervioso.','Me pongo nervioso antes de hablar.'] },
-
-  { g:'Courants', inf:'Abrir',       tr:'ouvrir',
-    conj:['abro','abres','abre','abrimos','abrís','abren'],
-    imp:'abría', ps:'abrí',
-    ex:['¿Abres la puerta?','Abre el vino.','¿A qué hora abren?'] },
-
-  { g:'Courants', inf:'Cerrar',      tr:'fermer',
-    conj:['cierro','cierras','cierra','cerramos','cerráis','cierran'],
-    imp:'cerraba', ps:'cerré',
-    ex:['Cierra la ventana.','Cierra la puerta.','¿A qué hora cierran?'] },
-
-  { g:'Courants', inf:'Empezar',     tr:'commencer',
-    conj:['empiezo','empiezas','empieza','empezamos','empezáis','empiezan'],
-    imp:'empezaba', ps:'empecé',
-    ex:['Empiezo a las 9.','Empezamos la reunión.','¿Cuándo empiezas el trabajo?'] },
-
-  { g:'Courants', inf:'Terminar',    tr:'finir / terminer',
-    conj:['termino','terminas','termina','terminamos','termináis','terminan'],
-    imp:'terminaba', ps:'terminé',
-    ex:['Termino tarde hoy.','Terminamos pronto.','¿Has terminado?'] },
-
-  { g:'Courants', inf:'Esperar',     tr:'attendre / espérer',
-    conj:['espero','esperas','espera','esperamos','esperáis','esperan'],
-    imp:'esperaba', ps:'esperé',
-    ex:['Te espero abajo.','Espera un momento.','¿Cuánto tiempo llevas esperando?'] },
-
-  { g:'Courants', inf:'Ayudar',      tr:'aider',
-    conj:['ayudo','ayudas','ayuda','ayudamos','ayudáis','ayudan'],
-    imp:'ayudaba', ps:'ayudé',
-    ex:['¿Me ayudas con esto?','Ayudamos a los vecinos.','¿Te ayudo?'] },
-
-  { g:'Courants', inf:'Necesitar',   tr:'avoir besoin de',
-    conj:['necesito','necesitas','necesita','necesitamos','necesitáis','necesitan'],
-    imp:'necesitaba', ps:'necesité',
-    ex:['Necesito ir al baño.','Necesito una farmacia.','¿Qué necesitas?'] },
-
-  { g:'Courants', inf:'Preferir',    tr:'préférer',
-    conj:['prefiero','prefieres','prefiere','preferimos','preferís','prefieren'],
-    imp:'prefería', ps:'preferí',
-    ex:['Prefiero txakoli.','Prefiero el vino tinto.','¿Qué prefieres?'] },
-
-  { g:'Courants', inf:'Entender',    tr:'comprendre',
-    conj:['entiendo','entiendes','entiende','entendemos','entendéis','entienden'],
-    imp:'entendía', ps:'entendí',
-    ex:['No entiendo nada.','¿Entiendes lo que digo?','Entendemos la situación.'] },
-
-  { g:'Courants', inf:'Creer',       tr:'croire',
-    conj:['creo','crees','cree','creemos','creéis','creen'],
-    imp:'creía', ps:'creí',
-    ex:['Creo que sí.','¿Crees que lloverá?','Creemos que es la mejor opción.'] },
-
-  { g:'Courants', inf:'Deber',       tr:'devoir (obligation)',
-    conj:['debo','debes','debe','debemos','debéis','deben'],
-    imp:'debía', ps:'debí',
-    ex:['Debo pagar la luz.','Debemos salir pronto.','¿Cuánto le debes?'] },
-];
 
 // ── State ──
 let currentFilter = 'all';
@@ -522,6 +228,7 @@ function buildCard(v, i) {
   const rightConj = v.conj.slice(3);
   const leftPro   = PRONOUNS.slice(0, 3);
   const rightPro  = PRONOUNS.slice(3);
+  const groupLabel = GROUP_LABELS[v.g] || v.g;
 
   return `
   <div class="flip-card${isLearned ? ' learned' : ''}" id="c${i}" data-inf="${v.inf}" data-g="${v.g}">
@@ -531,7 +238,7 @@ function buildCard(v, i) {
         <div class="check-badge">&#10003;</div>
         <div class="v-name">${v.inf}</div>
         <div class="v-trans">${v.tr}</div>
-        <div class="v-badge">${v.g}</div>
+        <div class="v-badge">${groupLabel}</div>
         <div class="blanks">
           ${leftPro.map(p => `<div class="b-row"><div class="b-pro">${p}</div><input class="b-input" type="text" autocomplete="off" spellcheck="false"></div>`).join('')}
           ${rightPro.map(p => `<div class="b-row"><div class="b-pro">${p}</div><input class="b-input" type="text" autocomplete="off" spellcheck="false"></div>`).join('')}
@@ -613,23 +320,21 @@ function resetLearned() {
 function printCards(side) {
   buildPrintSection(side);
   window.print();
-  // Clean up after printing
   setTimeout(() => { document.getElementById('print-section').innerHTML = ''; }, 1000);
 }
 
 function buildPrintSection(side) {
   const ps = document.getElementById('print-section');
   const pages = [];
-  const list  = VERBS; // always print all verbs
+  const list  = VERBS;
 
   for (let i = 0; i < list.length; i += 4) {
     const chunk = list.slice(i, i + 4);
-    while (chunk.length < 4) chunk.push(null); // pad to 4
+    while (chunk.length < 4) chunk.push(null);
 
     if (side === 'front') {
       pages.push(buildPrintPage(chunk, 'front'));
     } else {
-      // Swap columns for duplex alignment: [B,A,D,C]
       const swapped = [chunk[1], chunk[0], chunk[3], chunk[2]];
       pages.push(buildPrintPage(swapped, 'back'));
     }

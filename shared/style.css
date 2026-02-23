@@ -1,0 +1,153 @@
+/* ═══════════════════════════════════════════
+   VERBO — Shared styles
+   Used by all pages
+   ═══════════════════════════════════════════ */
+
+/* ── Design tokens ── */
+:root {
+  --bg-dark:    #0f1628;
+  --bg-dark-2:  #1c2d50;
+  --bg-card:    #1a2744;
+  --red:        #c0392b;
+  --red-dark:   #922b21;
+  --gold:       #f39c12;
+  --green:      #27ae60;
+  --green-dark: #1e8449;
+  --text:       rgba(255,255,255,1);
+  --text-muted: rgba(255,255,255,.45);
+  --text-dim:   rgba(255,255,255,.2);
+  --border:     rgba(255,255,255,.1);
+  --surface:    rgba(255,255,255,.07);
+  --radius-sm:  9px;
+  --radius-md:  14px;
+  --radius-lg:  20px;
+  --bg-light:   #f5f0e8;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Typography ── */
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--text);
+}
+
+/* ── Back link ── */
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .82rem; color: var(--text-muted);
+  text-decoration: none; padding: 8px 0;
+  transition: color .2s;
+}
+.back-link:hover { color: var(--text); }
+
+/* ── Tag pill ── */
+.tag {
+  font-size: .7rem; padding: 3px 9px; border-radius: 20px;
+  background: var(--surface); color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* ── Glass card (hub) ── */
+.glass-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 24px;
+}
+
+/* ── Progress bar ── */
+.prog-track {
+  height: 5px; background: var(--border);
+  border-radius: 3px; overflow: hidden;
+}
+.prog-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--red), var(--gold));
+  border-radius: 3px; transition: width .35s ease; width: 0%;
+}
+
+/* ── Shake animation ── */
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  15%     { transform: translateX(-9px); }
+  30%     { transform: translateX(9px); }
+  50%     { transform: translateX(-6px); }
+  70%     { transform: translateX(6px); }
+  90%     { transform: translateX(-3px); }
+}
+.shaking { animation: shake .45s ease; }
+
+/* ── Screen transitions (SPA pages) ── */
+.screen {
+  position: fixed; inset: 0;
+  display: flex; flex-direction: column;
+  opacity: 0; pointer-events: none;
+  transform: translateY(16px);
+  transition: opacity .22s ease, transform .22s ease;
+}
+.screen.active { opacity: 1; pointer-events: all; transform: translateY(0); }
+
+/* ── Flash overlay (wrong answer) ── */
+.flash-overlay {
+  position: fixed; inset: 0; z-index: 80;
+  background: rgba(192,57,43,.4);
+  opacity: 0; pointer-events: none;
+  transition: opacity .15s ease;
+}
+.flash-overlay.on { opacity: 1; }
+
+/* ── Game answer input ── */
+.answer-input {
+  flex: 1; padding: 15px 16px;
+  background: rgba(255,255,255,.09); border: 2px solid rgba(255,255,255,.13);
+  border-radius: var(--radius-md); color: white;
+  font-size: 1.05rem; outline: none; font-family: inherit;
+  transition: border-color .2s, background .2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.answer-input::placeholder { color: rgba(255,255,255,.28); }
+.answer-input:focus  { border-color: rgba(255,255,255,.3); }
+.answer-input.ok     { border-color: var(--green); background: rgba(39,174,96,.13); }
+.answer-input.ko     { border-color: var(--red);   background: rgba(192,57,43,.13); }
+
+/* ── Validate button ── */
+.validate-btn {
+  width: 52px; border-radius: var(--radius-md); background: var(--red); border: none;
+  color: white; font-size: 1.3rem; cursor: pointer; flex-shrink: 0;
+  transition: transform .1s;
+  display: flex; align-items: center; justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.validate-btn:active { transform: scale(.92); }
+
+/* ── Hint ── */
+.hint-btn {
+  padding: 6px 16px; border-radius: 20px;
+  background: var(--surface); border: 1px solid rgba(255,255,255,.12);
+  color: var(--text-muted); font-size: .74rem; cursor: pointer;
+  transition: background .2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.hint-btn:active { background: rgba(255,255,255,.15); }
+.hint-val { font-size: .8rem; color: rgba(243,156,18,.85); font-style: italic; }
+
+/* ── Message feedback ── */
+.msg {
+  text-align: center; margin-top: 9px; font-size: .83rem;
+  min-height: 20px; color: rgba(255,255,255,.5);
+}
+.msg.ok-msg { color: var(--green); font-weight: 700; }
+.msg.ko-msg { color: #e74c3c; font-weight: 700; }
+
+/* ── Mode toggle (browse/quiz) ── */
+.mode-toggle {
+  display: flex; background: var(--surface); border-radius: 12px;
+  padding: 4px; gap: 2px;
+}
+.mode-btn {
+  flex: 1; padding: 9px 12px; border: none; border-radius: var(--radius-sm);
+  font-size: .8rem; font-weight: 700; cursor: pointer;
+  background: transparent; color: var(--text-muted); transition: all .2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.mode-btn.active { background: var(--red); color: white; }

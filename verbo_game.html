@@ -7,25 +7,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="theme-color" content="#0f1628">
   <title>Verbo 🇪🇸</title>
+  <link rel="stylesheet" href="shared/style.css">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     html, body {
       height: 100%; height: 100dvh;
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      background: #0f1628; color: white;
-      overflow: hidden;
+      background: #0f1628; overflow: hidden;
     }
-
-    /* ── Screens ── */
-    .screen {
-      position: fixed; inset: 0;
-      display: flex; flex-direction: column;
-      opacity: 0; pointer-events: none;
-      transform: translateY(16px);
-      transition: opacity .22s ease, transform .22s ease;
-    }
-    .screen.active { opacity: 1; pointer-events: all; transform: translateY(0); }
 
     /* ══════════════════════════════
        HOME
@@ -37,38 +24,38 @@
 
     .home-header { padding: 52px 26px 14px; text-align: center; }
     .home-logo   { font-size: 3rem; font-weight: 900; letter-spacing: -2px; line-height: 1; }
-    .home-logo em { color: #f39c12; font-style: normal; }
-    .home-sub    { font-size: 0.85rem; color: rgba(255,255,255,.45); margin-top: 6px; }
+    .home-logo em { color: var(--gold); font-style: normal; }
+    .home-sub    { font-size: 0.85rem; color: var(--text-muted); margin-top: 6px; }
 
     .tabs {
       display: flex; margin: 18px 22px 0;
-      background: rgba(255,255,255,.07); border-radius: 12px; padding: 4px; gap: 2px;
+      background: var(--surface); border-radius: 12px; padding: 4px; gap: 2px;
     }
     .tab-btn {
-      flex: 1; padding: 9px 4px; border: none; border-radius: 9px;
+      flex: 1; padding: 9px 4px; border: none; border-radius: var(--radius-sm);
       font-size: 0.76rem; font-weight: 700; cursor: pointer;
-      background: transparent; color: rgba(255,255,255,.45); transition: all .2s;
+      background: transparent; color: var(--text-muted); transition: all .2s;
     }
-    .tab-btn.active { background: #c0392b; color: white; }
+    .tab-btn.active { background: var(--red); color: white; }
 
     .list-section { padding: 14px 22px 48px; display: flex; flex-direction: column; gap: 9px; }
 
     .list-card {
-      border-radius: 14px; padding: 14px 16px;
+      border-radius: var(--radius-md); padding: 14px 16px;
       display: flex; align-items: center; gap: 13px;
       cursor: pointer; transition: transform .12s;
-      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.08);
+      background: var(--surface); border: 1px solid rgba(255,255,255,.08);
       -webkit-tap-highlight-color: transparent;
     }
     .list-card:active { transform: scale(.97); }
     .lc-emoji  { font-size: 1.7rem; width: 42px; text-align: center; flex-shrink: 0; }
     .lc-body   { flex: 1; min-width: 0; }
     .lc-name   { font-size: .95rem; font-weight: 700; }
-    .lc-desc   { font-size: .72rem; color: rgba(255,255,255,.45); margin-top: 2px; }
+    .lc-desc   { font-size: .72rem; color: var(--text-muted); margin-top: 2px; }
     .lc-score  { font-size: .72rem; margin-top: 3px; color: rgba(255,255,255,.35); }
-    .lc-score b { color: #f39c12; font-weight: 700; }
-    .lc-score .done-badge { color: #27ae60; font-weight: 700; }
-    .lc-arrow  { font-size: 1.3rem; color: rgba(255,255,255,.2); flex-shrink: 0; }
+    .lc-score b { color: var(--gold); font-weight: 700; }
+    .lc-score .done-badge { color: var(--green); font-weight: 700; }
+    .lc-arrow  { font-size: 1.3rem; color: var(--text-dim); flex-shrink: 0; }
 
     /* ══════════════════════════════
        GAME
@@ -83,20 +70,12 @@
     }
     .g-back {
       width: 36px; height: 36px; border-radius: 50%;
-      background: rgba(255,255,255,.1); border: none; color: white;
+      background: var(--surface); border: none; color: white;
       font-size: 1rem; cursor: pointer; display: flex;
       align-items: center; justify-content: center; flex-shrink: 0;
       -webkit-tap-highlight-color: transparent;
     }
-    .prog-track {
-      flex: 1; height: 5px; background: rgba(255,255,255,.1);
-      border-radius: 3px; overflow: hidden;
-    }
-    .prog-fill {
-      height: 100%; background: linear-gradient(90deg, #c0392b, #f39c12);
-      border-radius: 3px; transition: width .35s ease; width: 0%;
-    }
-    .g-counter { font-size: .82rem; font-weight: 700; color: #f39c12; white-space: nowrap; flex-shrink: 0; }
+    .g-counter { font-size: .82rem; font-weight: 700; color: var(--gold); white-space: nowrap; flex-shrink: 0; }
 
     /* Card zone */
     .card-zone {
@@ -110,7 +89,7 @@
     }
     .list-tag {
       font-size: .72rem; padding: 3px 11px; border-radius: 20px;
-      background: rgba(255,255,255,.09); color: rgba(255,255,255,.45);
+      background: var(--surface); color: var(--text-muted);
       margin-bottom: 18px;
     }
     #game-card {
@@ -125,66 +104,13 @@
       display: flex; align-items: center; justify-content: center;
       gap: 8px; margin-top: 18px; min-height: 32px;
     }
-    .hint-btn {
-      padding: 6px 16px; border-radius: 20px;
-      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12);
-      color: rgba(255,255,255,.45); font-size: .74rem; cursor: pointer;
-      transition: background .2s;
-      -webkit-tap-highlight-color: transparent;
-    }
-    .hint-btn:active { background: rgba(255,255,255,.15); }
-    .hint-val { font-size: .8rem; color: rgba(243,156,18,.85); font-style: italic; }
 
     /* Input zone */
     .input-zone { padding: 0 20px 36px; flex-shrink: 0; }
     .input-row  { display: flex; gap: 9px; align-items: stretch; }
-    #answer-input {
-      flex: 1; padding: 15px 16px;
-      background: rgba(255,255,255,.09); border: 2px solid rgba(255,255,255,.13);
-      border-radius: 14px; color: white; font-size: 1.05rem;
-      outline: none; font-family: inherit;
-      transition: border-color .2s, background .2s;
-      -webkit-tap-highlight-color: transparent;
-    }
-    #answer-input::placeholder { color: rgba(255,255,255,.28); }
-    #answer-input:focus  { border-color: rgba(255,255,255,.3); }
-    #answer-input.ok     { border-color: #27ae60; background: rgba(39,174,96,.13); }
-    #answer-input.ko     { border-color: #c0392b; background: rgba(192,57,43,.13); }
-    #ok-btn {
-      width: 52px; border-radius: 14px; background: #c0392b; border: none;
-      color: white; font-size: 1.3rem; cursor: pointer; flex-shrink: 0;
-      transition: transform .1s; display: flex; align-items: center; justify-content: center;
-      -webkit-tap-highlight-color: transparent;
-    }
-    #ok-btn:active { transform: scale(.92); }
-    .msg {
-      text-align: center; margin-top: 9px; font-size: .83rem;
-      min-height: 20px; color: rgba(255,255,255,.5);
-    }
-    .msg.ok-msg { color: #27ae60; font-weight: 700; }
-    .msg.ko-msg { color: #e74c3c; font-weight: 700; }
-
-    /* ── Animations ── */
-    @keyframes shake {
-      0%,100% { transform: translateX(0); }
-      15%      { transform: translateX(-9px); }
-      30%      { transform: translateX(9px); }
-      50%      { transform: translateX(-6px); }
-      70%      { transform: translateX(6px); }
-      90%      { transform: translateX(-3px); }
-    }
-    .shaking { animation: shake .45s ease; }
-
-    #flash {
-      position: fixed; inset: 0; z-index: 80;
-      background: rgba(192,57,43,.4);
-      opacity: 0; pointer-events: none;
-      transition: opacity .15s ease;
-    }
-    #flash.on { opacity: 1; }
 
     /* ══════════════════════════════
-       WRONG PAUSE (overlay)
+       WRONG PAUSE
     ══════════════════════════════ */
     #s-wrong {
       background: rgba(5,8,18,.92);
@@ -195,14 +121,14 @@
     .wr-title  { font-size: 2.2rem; font-weight: 900; color: #e74c3c; margin-top: 8px; }
     .wr-verb   { font-size: 1rem; color: rgba(255,255,255,.5); margin-top: 10px; }
     .wr-box    {
-      margin-top: 18px; padding: 14px 28px; border-radius: 14px;
-      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+      margin-top: 18px; padding: 14px 28px; border-radius: var(--radius-md);
+      background: rgba(255,255,255,.06); border: 1px solid var(--border);
     }
     .wr-box-lbl { font-size: .72rem; color: rgba(255,255,255,.35); margin-bottom: 4px; }
-    .wr-answer  { font-size: 1.25rem; font-weight: 800; color: #f39c12; }
+    .wr-answer  { font-size: 1.25rem; font-weight: 800; color: var(--gold); }
     .wr-count   { margin-top: 28px; font-size: .83rem; color: rgba(255,255,255,.35); }
     .wr-count b { color: rgba(255,255,255,.6); }
-    .wr-tap     { margin-top: 10px; font-size: .75rem; color: rgba(255,255,255,.2); }
+    .wr-tap     { margin-top: 10px; font-size: .75rem; color: var(--text-dim); }
 
     /* ══════════════════════════════
        WIN
@@ -219,23 +145,23 @@
       display: inline-block; margin-top: 22px;
       padding: 10px 24px; border-radius: 12px;
       background: rgba(243,156,18,.12); border: 1px solid rgba(243,156,18,.35);
-      font-size: .9rem; font-weight: 700; color: #f39c12;
+      font-size: .9rem; font-weight: 700; color: var(--gold);
     }
     .win-actions { display: flex; flex-direction: column; gap: 11px; margin-top: 28px; width: 100%; max-width: 290px; }
     .win-btn {
-      padding: 15px; border-radius: 14px; border: none;
+      padding: 15px; border-radius: var(--radius-md); border: none;
       font-size: .95rem; font-weight: 700; cursor: pointer;
       transition: transform .1s;
       -webkit-tap-highlight-color: transparent;
     }
     .win-btn:active { transform: scale(.97); }
-    .win-btn-go   { background: #27ae60; color: white; }
-    .win-btn-home { background: rgba(255,255,255,.1); color: white; }
+    .win-btn-go   { background: var(--green); color: white; }
+    .win-btn-home { background: var(--surface); color: white; }
   </style>
 </head>
 <body>
 
-<div id="flash"></div>
+<div id="flash" class="flash-overlay"></div>
 
 <!-- ═══════════ HOME ═══════════ -->
 <div id="s-home" class="screen active">
@@ -273,11 +199,11 @@
 
   <div class="input-zone">
     <div class="input-row">
-      <input id="answer-input" type="text"
+      <input id="answer-input" class="answer-input" type="text"
              placeholder="traduction française…"
              autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
              onkeydown="if(event.key==='Enter') validate()">
-      <button id="ok-btn" onclick="validate()">&#10003;</button>
+      <button class="validate-btn" onclick="validate()">&#10003;</button>
     </div>
     <div class="msg" id="msg"></div>
   </div>
@@ -308,122 +234,16 @@
   </div>
 </div>
 
+<script src="data/verbs.js"></script>
+<script src="shared/engine.js"></script>
 <script>
 // ═══════════════════════════════════════════
-//  VERB DATA
+//  GAME — Verbo (uses shared VERBS, VERB_LISTS, engine)
 // ═══════════════════════════════════════════
 
-const VERBS = [
-  // ── Essentiels ──
-  { g:'E', inf:'Ser',        tr:'être (permanent)',          ans:['être','etre'] },
-  { g:'E', inf:'Estar',      tr:'être (état / lieu)',        ans:['être','etre'] },
-  { g:'E', inf:'Tener',      tr:'avoir',                     ans:['avoir'] },
-  { g:'E', inf:'Hacer',      tr:'faire',                     ans:['faire'] },
-  { g:'E', inf:'Ir',         tr:'aller',                     ans:['aller'] },
-  { g:'E', inf:'Venir',      tr:'venir',                     ans:['venir'] },
-  { g:'E', inf:'Poder',      tr:'pouvoir',                   ans:['pouvoir'] },
-  { g:'E', inf:'Querer',     tr:'vouloir / aimer',           ans:['vouloir','aimer'] },
-  { g:'E', inf:'Decir',      tr:'dire',                      ans:['dire'] },
-  { g:'E', inf:'Ver',        tr:'voir',                      ans:['voir'] },
-  { g:'E', inf:'Dar',        tr:'donner',                    ans:['donner'] },
-  { g:'E', inf:'Saber',      tr:'savoir',                    ans:['savoir'] },
-  { g:'E', inf:'Conocer',    tr:'connaître',                 ans:['connaître','connaitre'] },
-  { g:'E', inf:'Hablar',     tr:'parler',                    ans:['parler'] },
-  { g:'E', inf:'Comer',      tr:'manger',                    ans:['manger'] },
-  { g:'E', inf:'Beber',      tr:'boire',                     ans:['boire'] },
-  { g:'E', inf:'Pedir',      tr:'demander / commander',      ans:['demander','commander'] },
-  { g:'E', inf:'Salir',      tr:'sortir',                    ans:['sortir'] },
-  { g:'E', inf:'Llegar',     tr:'arriver',                   ans:['arriver'] },
-  { g:'E', inf:'Volver',     tr:'revenir',                   ans:['revenir','rentrer'] },
-  { g:'E', inf:'Dormir',     tr:'dormir',                    ans:['dormir'] },
-  { g:'E', inf:'Levantarse', tr:'se lever',                  ans:['se lever','lever'] },
-  { g:'E', inf:'Sentarse',   tr:"s'asseoir",                 ans:["s'asseoir",'asseoir'] },
-  { g:'E', inf:'Comprar',    tr:'acheter',                   ans:['acheter'] },
-  { g:'E', inf:'Pagar',      tr:'payer',                     ans:['payer'] },
-  { g:'E', inf:'Gustar',     tr:'plaire / aimer',            ans:['plaire','aimer'] },
-  // ── Courants ──
-  { g:'C', inf:'Vivir',      tr:'vivre',                     ans:['vivre'] },
-  { g:'C', inf:'Trabajar',   tr:'travailler',                ans:['travailler'] },
-  { g:'C', inf:'Estudiar',   tr:'étudier',                   ans:['étudier','etudier'] },
-  { g:'C', inf:'Aprender',   tr:'apprendre',                 ans:['apprendre'] },
-  { g:'C', inf:'Enseñar',    tr:'enseigner / montrer',       ans:['enseigner','montrer'] },
-  { g:'C', inf:'Escribir',   tr:'écrire',                    ans:['écrire','ecrire'] },
-  { g:'C', inf:'Leer',       tr:'lire',                      ans:['lire'] },
-  { g:'C', inf:'Escuchar',   tr:'écouter',                   ans:['écouter','ecouter'] },
-  { g:'C', inf:'Mirar',      tr:'regarder',                  ans:['regarder'] },
-  { g:'C', inf:'Buscar',     tr:'chercher',                  ans:['chercher'] },
-  { g:'C', inf:'Encontrar',  tr:'trouver / rencontrer',      ans:['trouver','rencontrer'] },
-  { g:'C', inf:'Perder',     tr:'perdre / rater',            ans:['perdre','rater'] },
-  { g:'C', inf:'Ganar',      tr:'gagner',                    ans:['gagner'] },
-  { g:'C', inf:'Gastar',     tr:'dépenser',                  ans:['dépenser','depenser'] },
-  { g:'C', inf:'Ahorrar',    tr:'économiser',                ans:['économiser','economiser'] },
-  { g:'C', inf:'Llevar',     tr:'porter / emmener',          ans:['porter','emmener'] },
-  { g:'C', inf:'Traer',      tr:'apporter',                  ans:['apporter'] },
-  { g:'C', inf:'Poner',      tr:'mettre / poser',            ans:['mettre','poser'] },
-  { g:'C', inf:'Ponerse',    tr:'se mettre / devenir',       ans:['se mettre','mettre','devenir'] },
-  { g:'C', inf:'Abrir',      tr:'ouvrir',                    ans:['ouvrir'] },
-  { g:'C', inf:'Cerrar',     tr:'fermer',                    ans:['fermer'] },
-  { g:'C', inf:'Empezar',    tr:'commencer',                 ans:['commencer'] },
-  { g:'C', inf:'Terminar',   tr:'finir / terminer',          ans:['finir','terminer'] },
-  { g:'C', inf:'Esperar',    tr:'attendre / espérer',        ans:['attendre','espérer','esperer'] },
-  { g:'C', inf:'Ayudar',     tr:'aider',                     ans:['aider'] },
-  { g:'C', inf:'Necesitar',  tr:'avoir besoin de',           ans:['avoir besoin','nécessiter','necessiter'] },
-  { g:'C', inf:'Preferir',   tr:'préférer',                  ans:['préférer','preferer'] },
-  { g:'C', inf:'Entender',   tr:'comprendre',                ans:['comprendre'] },
-  { g:'C', inf:'Creer',      tr:'croire',                    ans:['croire'] },
-  { g:'C', inf:'Deber',      tr:'devoir',                    ans:['devoir'] },
-];
+const PREFIX = 'vg';
 
-// ═══════════════════════════════════════════
-//  LIST DEFINITIONS
-// ═══════════════════════════════════════════
-
-const S  = inf => VERBS.find(v => v.inf === inf);
-const by = (...names) => VERBS.filter(v => names.includes(v.inf));
-
-const IRRE   = ['Ser','Estar','Ir','Tener','Hacer','Venir','Poder','Querer','Decir','Saber','Dar','Ver'];
-const GO_V   = ['Tener','Hacer','Salir','Poner','Venir','Decir','Traer'];
-const DIPH   = ['Querer','Poder','Volver','Dormir','Cerrar','Empezar','Entender','Preferir','Sentarse','Encontrar'];
-const REFLEX = ['Levantarse','Sentarse','Ponerse'];
-const BAR    = ['Pedir','Pagar','Beber','Traer','Querer','Gustar','Dar','Salir','Volver','Llegar','Esperar'];
-const VOYAGE = ['Llegar','Salir','Volver','Ir','Venir','Llevar','Buscar','Encontrar','Perder','Esperar','Traer'];
-const TRAV   = ['Trabajar','Empezar','Terminar','Necesitar','Buscar','Encontrar','Saber','Poder','Deber','Escribir','Leer','Entender','Aprender'];
-const MAIS   = ['Levantarse','Sentarse','Dormir','Comer','Beber','Poner','Abrir','Cerrar','Comprar','Vivir'];
-const COMM   = ['Hablar','Decir','Escuchar','Escribir','Leer','Saber','Conocer','Entender','Creer','Ver'];
-const ARGENT = ['Ganar','Gastar','Ahorrar','Pagar','Comprar','Necesitar','Deber','Tener'];
-const REG_AR = ['Hablar','Comprar','Pagar','Llegar','Escuchar','Mirar','Buscar','Ganar','Gastar','Ahorrar','Necesitar','Ayudar','Trabajar','Estudiar','Enseñar','Terminar','Esperar','Llevar'];
-const REG_EI = ['Comer','Beber','Leer','Creer','Vivir','Escribir','Abrir','Aprender'];
-const STARTER= ['Ser','Estar','Tener','Hacer','Ir','Poder','Querer','Decir','Hablar','Gustar'];
-
-const TABS = {
-  niveau: [
-    { id:'starter',    emoji:'🌱', label:'Starter',     desc:'10 verbes — pour commencer',      f: v => STARTER.includes(v.inf) },
-    { id:'essentiels', emoji:'⭐', label:'Essentiels',  desc:'26 verbes — base solide',         f: v => v.g === 'E' },
-    { id:'courants',   emoji:'📚', label:'Courants',    desc:'30 verbes — niveau intermédiaire', f: v => v.g === 'C' },
-    { id:'tout',       emoji:'🔥', label:'Tout',        desc:'56 verbes — challenge total',      f: ()=> true },
-  ],
-  theme: [
-    { id:'bar',    emoji:'🍺', label:'Bar & tapas',     desc:'Commander, payer, trinquer',        f: v => BAR.includes(v.inf) },
-    { id:'voyage', emoji:'✈️', label:'Voyage',          desc:'Transports, se repérer',            f: v => VOYAGE.includes(v.inf) },
-    { id:'trav',   emoji:'💼', label:'Travail',         desc:'Réunions, mails, planning',         f: v => TRAV.includes(v.inf) },
-    { id:'mais',   emoji:'🏠', label:'Maison & routine',desc:'Quotidien domestique',              f: v => MAIS.includes(v.inf) },
-    { id:'comm',   emoji:'🗣️', label:'Communication',  desc:'Conversations du quotidien',        f: v => COMM.includes(v.inf) },
-    { id:'argent', emoji:'💰', label:'Argent',          desc:'Gagner, dépenser, économiser',      f: v => ARGENT.includes(v.inf) },
-  ],
-  grammaire: [
-    { id:'irre',   emoji:'🔴', label:'Grands irréguliers', desc:'Les 12 verbes les plus tordus',       f: v => IRRE.includes(v.inf) },
-    { id:'go',     emoji:'⚡', label:'Verbes en -go',      desc:'yo → tengo, hago, salgo…',            f: v => GO_V.includes(v.inf) },
-    { id:'diph',   emoji:'🔀', label:'Diphtongues',        desc:'puedo, quiero, vuelvo, duermo…',      f: v => DIPH.includes(v.inf) },
-    { id:'reflex', emoji:'🔄', label:'Réfléchis',          desc:'me levanto, te sientas, se pone…',    f: v => REFLEX.includes(v.inf) },
-    { id:'regar',  emoji:'✅', label:'Réguliers -ar',      desc:'Pattern hablar, trabajar, llegar…',   f: v => REG_AR.includes(v.inf) },
-    { id:'regei',  emoji:'✅', label:'Réguliers -er/-ir',  desc:'Pattern comer, vivir, escribir…',     f: v => REG_EI.includes(v.inf) },
-  ],
-};
-
-// ═══════════════════════════════════════════
-//  STATE
-// ═══════════════════════════════════════════
-
+// ── State ──
 let currentList = null;
 let deck = [];
 let idx  = 0;
@@ -431,49 +251,18 @@ let hintUsed = false;
 let wrongTimer = null;
 let currentTab = 'niveau';
 
-// ═══════════════════════════════════════════
-//  UTILS
-// ═══════════════════════════════════════════
-
-const norm = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g,'')
-                   .toLowerCase().trim().replace(/['']/g,"'");
-
-function check(input, ans) {
-  const a = norm(input);
-  return a.length >= 2 && ans.some(c => norm(c) === a);
-}
-
-function shuffle(arr) {
-  const a = [...arr];
-  for (let i = a.length-1; i > 0; i--) {
-    const j = Math.floor(Math.random()*(i+1));
-    [a[i],a[j]] = [a[j],a[i]];
-  }
-  return a;
-}
-
-const getBest = id => parseInt(localStorage.getItem('vg-b-'+id)||'0');
-const setBest = (id,n) => { if(n > getBest(id)) localStorage.setItem('vg-b-'+id, n); };
-const getRuns = id => parseInt(localStorage.getItem('vg-r-'+id)||'0');
-const addRun  = id => localStorage.setItem('vg-r-'+id, getRuns(id)+1);
-
+// ── Helpers ──
 function listVerbs(listDef) { return VERBS.filter(listDef.f); }
-function allLists() { return [...TABS.niveau, ...TABS.theme, ...TABS.grammaire]; }
+function allLists() { return [...VERB_LISTS.niveau, ...VERB_LISTS.theme, ...VERB_LISTS.grammaire]; }
 function findList(id) { return allLists().find(l => l.id === id); }
 
-// ═══════════════════════════════════════════
-//  SCREEN MANAGEMENT
-// ═══════════════════════════════════════════
-
+// ── Screen management ──
 function show(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById('s-'+id).classList.add('active');
 }
 
-// ═══════════════════════════════════════════
-//  HOME
-// ═══════════════════════════════════════════
-
+// ── Home ──
 function switchTab(tab, btn) {
   currentTab = tab;
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -483,11 +272,11 @@ function switchTab(tab, btn) {
 
 function renderHome() {
   const sec = document.getElementById('list-section');
-  sec.innerHTML = TABS[currentTab].map(l => {
+  sec.innerHTML = VERB_LISTS[currentTab].map(l => {
     const verbs = listVerbs(l);
     const n     = verbs.length;
-    const best  = getBest(l.id);
-    const runs  = getRuns(l.id);
+    const best  = getBest(PREFIX, l.id);
+    const runs  = getRuns(PREFIX, l.id);
     const nextRun = runs + 1;
     const runStr  = runs > 0 ? ` · Run #${nextRun} à venir` : '';
     let scoreStr;
@@ -514,17 +303,14 @@ function goHome() {
   show('home');
 }
 
-// ═══════════════════════════════════════════
-//  GAME
-// ═══════════════════════════════════════════
-
+// ── Game ──
 function startGame(id) {
   currentList = findList(id);
   if (!currentList) return;
   deck = shuffle(listVerbs(currentList));
   idx  = 0; hintUsed = false;
-  addRun(id);
-  document.getElementById('run-tag').textContent  = 'Run #' + getRuns(id);
+  addRun(PREFIX, id);
+  document.getElementById('run-tag').textContent  = 'Run #' + getRuns(PREFIX, id);
   document.getElementById('list-tag').textContent = currentList.emoji + ' ' + currentList.label;
   renderVerb(false);
   show('game');
@@ -535,17 +321,15 @@ function renderVerb(animate) {
   const verb  = deck[idx];
   const input = document.getElementById('answer-input');
   const msg   = document.getElementById('msg');
-  input.value = ''; input.className = '';
+  input.value = ''; input.className = 'answer-input';
   msg.textContent = ''; msg.className = 'msg';
   document.getElementById('hint-val').textContent = '';
   document.getElementById('hint-btn').style.display = '';
   hintUsed = false;
 
-  // progress
   const pct = deck.length ? (idx / deck.length) * 100 : 0;
   document.getElementById('prog-fill').style.width = pct + '%';
   document.getElementById('g-counter').textContent = '🔥 ' + idx + '/' + deck.length;
-
   document.getElementById('big-verb').textContent = verb ? verb.inf : '—';
 
   if (animate) {
@@ -567,7 +351,7 @@ function validate() {
   const verb  = deck[idx];
   if (!verb || !input.value.trim()) return;
 
-  if (check(input.value, verb.ans)) {
+  if (checkAnswer(input.value, verb.ans)) {
     onCorrect();
   } else {
     onWrong(verb);
@@ -579,16 +363,15 @@ function onCorrect() {
   const msg   = document.getElementById('msg');
   const card  = document.getElementById('game-card');
 
-  input.className = 'ok';
+  input.className = 'answer-input ok';
   msg.textContent = '✓ Bravo !'; msg.className = 'msg ok-msg';
 
-  // exit animation
   card.style.transition = 'transform .28s ease, opacity .28s ease';
   card.style.transform  = 'translateY(-48px)';
   card.style.opacity    = '0';
 
   idx++;
-  setBest(currentList.id, idx);
+  setBest(PREFIX, currentList.id, idx);
 
   if (idx >= deck.length) {
     setTimeout(() => showWin(), 300);
@@ -602,16 +385,14 @@ function onWrong(verb) {
   const card  = document.getElementById('game-card');
   const flash = document.getElementById('flash');
 
-  input.className = 'ko';
+  input.className = 'answer-input ko';
 
-  // shake + flash
   card.classList.remove('shaking');
   void card.offsetWidth;
   card.classList.add('shaking');
   flash.classList.add('on');
   setTimeout(() => flash.classList.remove('on'), 320);
 
-  // show wrong screen after brief pause
   setTimeout(() => {
     document.getElementById('wr-verb').textContent   = verb.inf + ' → ???';
     document.getElementById('wr-answer').textContent = verb.ans[0];
@@ -636,10 +417,9 @@ function clearIntervalAndRestart() {
 function restartGame() {
   deck = shuffle(listVerbs(currentList));
   idx  = 0; hintUsed = false;
-  addRun(currentList.id);
-  document.getElementById('run-tag').textContent = 'Run #' + getRuns(currentList.id);
+  addRun(PREFIX, currentList.id);
+  document.getElementById('run-tag').textContent = 'Run #' + getRuns(PREFIX, currentList.id);
 
-  // reset card styles
   const card = document.getElementById('game-card');
   card.style.transition = ''; card.style.transform = ''; card.style.opacity = '';
 
@@ -660,8 +440,8 @@ function showHint() {
 
 function showWin() {
   const n    = deck.length;
-  const best = getBest(currentList.id);
-  const isRecord = n >= best; // always true when completing full deck
+  const best = getBest(PREFIX, currentList.id);
+  const isRecord = n >= best;
 
   document.getElementById('win-sub').textContent =
     `Tu as fait les ${n} verbes sans faute ! 🎉`;
@@ -671,9 +451,7 @@ function showWin() {
   show('win');
 }
 
-// ═══════════════════════════════════════════
-//  INIT
-// ═══════════════════════════════════════════
+// ── Init ──
 renderHome();
 </script>
 </body>
