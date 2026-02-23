@@ -397,6 +397,147 @@ const VERBS = [
     conj:['debo','debes','debe','debemos','debéis','deben'],
     imp:'debía', ps:'debí',
     ex:['Debo pagar la luz.','Debemos salir pronto.','¿Cuánto le debes?'] },
+
+  // ═══════════════ COURANTS 2 ═══════════════
+  { g:'C2', inf:'Recordar',    tr:'se souvenir / rappeler',
+    tags:['diph','comm'],
+    ans:['se souvenir','rappeler','souvenir'],
+    conj:['recuerdo','recuerdas','recuerda','recordamos','recordáis','recuerdan'],
+    imp:'recordaba', ps:'recordé',
+    ex:['No recuerdo su nombre.','¿Recuerdas aquella noche?','Recuerda cerrar la puerta.'] },
+
+  { g:'C2', inf:'Olvidar',     tr:'oublier',
+    tags:['regar','comm'],
+    ans:['oublier'],
+    conj:['olvido','olvidas','olvida','olvidamos','olvidáis','olvidan'],
+    imp:'olvidaba', ps:'olvidé',
+    ex:['Siempre olvido las llaves.','No me olvides.','Olvidé mi contraseña.'] },
+
+  { g:'C2', inf:'Cambiar',     tr:'changer',
+    tags:['regar','voyage'],
+    ans:['changer'],
+    conj:['cambio','cambias','cambia','cambiamos','cambiáis','cambian'],
+    imp:'cambiaba', ps:'cambié',
+    ex:['Quiero cambiar de mesa.','Cambio de línea en Moyúa.','Cambia de tema.'] },
+
+  { g:'C2', inf:'Llamar',      tr:'appeler',
+    tags:['regar','comm'],
+    ans:['appeler'],
+    conj:['llamo','llamas','llama','llamamos','llamáis','llaman'],
+    imp:'llamaba', ps:'llamé',
+    ex:['¿Cómo te llamas?','Llama a un taxi.','Me llamo Paul.'] },
+
+  { g:'C2', inf:'Tocar',       tr:'toucher / jouer (instrument)',
+    tags:['regar'],
+    ans:['toucher','jouer'],
+    conj:['toco','tocas','toca','tocamos','tocáis','tocan'],
+    imp:'tocaba', ps:'toqué',
+    ex:['Toca la guitarra.','No toques eso.','¿A quién le toca?'] },
+
+  { g:'C2', inf:'Jugar',       tr:'jouer',
+    tags:['diph','regar'],
+    ans:['jouer'],
+    conj:['juego','juegas','juega','jugamos','jugáis','juegan'],
+    imp:'jugaba', ps:'jugué',
+    ex:['¿Jugamos al fútbol?','Juega con el móvil.','Jugamos los domingos.'] },
+
+  { g:'C2', inf:'Correr',      tr:'courir',
+    tags:['regei','mouvement'],
+    ans:['courir'],
+    conj:['corro','corres','corre','corremos','corréis','corren'],
+    imp:'corría', ps:'corrí',
+    ex:['Corro por la ría todas las mañanas.','¡Corre, que llegamos tarde!','Corren muy rápido.'] },
+
+  { g:'C2', inf:'Pensar',      tr:'penser',
+    tags:['diph','comm'],
+    ans:['penser'],
+    conj:['pienso','piensas','piensa','pensamos','pensáis','piensan'],
+    imp:'pensaba', ps:'pensé',
+    ex:['¿Qué piensas?','Pienso que tienes razón.','Piensa antes de hablar.'] },
+
+  { g:'C2', inf:'Sentir',      tr:'sentir / ressentir',
+    tags:['diph','emotion'],
+    ans:['sentir','ressentir'],
+    conj:['siento','sientes','siente','sentimos','sentís','sienten'],
+    imp:'sentía', ps:'sentí',
+    ex:['Lo siento mucho.','¿Cómo te sientes?','Siento frío.'] },
+
+  { g:'C2', inf:'Parecer',     tr:'sembler / paraître',
+    tags:['regei','comm'],
+    ans:['sembler','paraître','paraitre'],
+    conj:['parezco','pareces','parece','parecemos','parecéis','parecen'],
+    imp:'parecía', ps:'pareció',
+    ex:['Parece fácil.','Me parece bien.','¿Te parece si vamos?'] },
+
+  { g:'C2', inf:'Caer',        tr:'tomber',
+    tags:['irre','mouvement'],
+    ans:['tomber'],
+    conj:['caigo','caes','cae','caemos','caéis','caen'],
+    imp:'caía', ps:'caí',
+    ex:['Me caigo de sueño.','Cae bien a todos.','Se me cayó el móvil.'] },
+
+  { g:'C2', inf:'Seguir',      tr:'suivre / continuer',
+    tags:['diph-ei','mouvement'],
+    ans:['suivre','continuer'],
+    conj:['sigo','sigues','sigue','seguimos','seguís','siguen'],
+    imp:'seguía', ps:'seguí',
+    ex:['Sigue recto.','Sigo aprendiendo español.','¿Me sigues?'] },
+
+  { g:'C2', inf:'Preguntar',   tr:'demander (question)',
+    tags:['regar','comm'],
+    ans:['demander'],
+    conj:['pregunto','preguntas','pregunta','preguntamos','preguntáis','preguntan'],
+    imp:'preguntaba', ps:'pregunté',
+    ex:['Voy a preguntar.','Pregunta al camarero.','Me preguntó la hora.'] },
+
+  { g:'C2', inf:'Intentar',    tr:'essayer',
+    tags:['regar','trav'],
+    ans:['essayer','tenter'],
+    conj:['intento','intentas','intenta','intentamos','intentáis','intentan'],
+    imp:'intentaba', ps:'intenté',
+    ex:['Intento hablar en español.','Inténtalo otra vez.','Intentamos llegar a tiempo.'] },
+
+  { g:'C2', inf:'Meter',       tr:'mettre (dedans)',
+    tags:['regei','maison'],
+    ans:['mettre'],
+    conj:['meto','metes','mete','metemos','metéis','meten'],
+    imp:'metía', ps:'metí',
+    ex:['Mete la ropa en la lavadora.','No metas la pata.','Meto las llaves en el bolsillo.'] },
+
+  { g:'C2', inf:'Sacar',       tr:'sortir / retirer',
+    tags:['regar','argent'],
+    ans:['sortir','retirer'],
+    conj:['saco','sacas','saca','sacamos','sacáis','sacan'],
+    imp:'sacaba', ps:'saqué',
+    ex:['Saca dinero del cajero.','Saco al perro dos veces al día.','Saca las entradas.'] },
+
+  { g:'C2', inf:'Subir',       tr:'monter',
+    tags:['regei','mouvement','maison'],
+    ans:['monter'],
+    conj:['subo','subes','sube','subimos','subís','suben'],
+    imp:'subía', ps:'subí',
+    ex:['Subo las escaleras.','Sube al autobús.','Los precios suben.'] },
+
+  { g:'C2', inf:'Bajar',       tr:'descendre',
+    tags:['regar','mouvement','maison'],
+    ans:['descendre'],
+    conj:['bajo','bajas','baja','bajamos','bajáis','bajan'],
+    imp:'bajaba', ps:'bajé',
+    ex:['Bajo en la siguiente.','Baja la música.','Los precios bajan en enero.'] },
+
+  { g:'C2', inf:'Conducir',    tr:'conduire',
+    tags:['go','voyage','mouvement'],
+    ans:['conduire'],
+    conj:['conduzco','conduces','conduce','conducimos','conducís','conducen'],
+    imp:'conducía', ps:'conduje',
+    ex:['No conduzco en ciudad.','¿Conduces tú o conduzco yo?','Conduce muy bien.'] },
+
+  { g:'C2', inf:'Elegir',      tr:'choisir',
+    tags:['go','bar'],
+    ans:['choisir'],
+    conj:['elijo','eliges','elige','elegimos','elegís','eligen'],
+    imp:'elegía', ps:'elegí',
+    ex:['Elige lo que quieras.','Elijo el menú del día.','¿Has elegido ya?'] },
 ];
 
 
@@ -410,7 +551,8 @@ const VERB_LISTS = {
     { id:'starter',    emoji:'🌱', label:'Starter',      desc:'10 verbes — pour commencer',       f: v => v.tags.includes('starter') },
     { id:'essentiels', emoji:'⭐', label:'Essentiels',   desc:'26 verbes — base solide',          f: v => v.g === 'E' },
     { id:'courants',   emoji:'📚', label:'Courants',     desc:'30 verbes — niveau intermédiaire', f: v => v.g === 'C' },
-    { id:'tout',       emoji:'🔥', label:'Tout',         desc:'56 verbes — challenge total',      f: () => true },
+    { id:'courants2',  emoji:'🚀', label:'Courants +',   desc:'20 verbes — niveau avancé',        f: v => v.g === 'C2' },
+    { id:'tout',       emoji:'🔥', label:'Tout',         desc:'76 verbes — challenge total',      f: () => true },
   ],
   theme: [
     { id:'bar',    emoji:'🍺', label:'Bar & tapas',      desc:'Commander, payer, trinquer',       f: v => v.tags.includes('bar') },
@@ -431,4 +573,4 @@ const VERB_LISTS = {
 };
 
 // Helper: group label display
-const GROUP_LABELS = { E: 'Essentiels', C: 'Courants' };
+const GROUP_LABELS = { E: 'Essentiels', C: 'Courants', C2: 'Courants +' };
