@@ -181,16 +181,19 @@ const PHRASES = [
 ];
 
 // Phrase lists for game filtering
-const PHRASE_LISTS = [
-  { id:'tout',   emoji:'🔥', label:'Toutes',               desc:'Toutes les phrases',            f: () => true },
-  { id:'n1',     emoji:'🌱', label:'Niveau 1 — Réguliers', desc:'Présent, verbes réguliers',     f: p => p.diff === 1 },
-  { id:'n2',     emoji:'⭐', label:'Niveau 2 — Irréguliers', desc:'Présent, verbes irréguliers', f: p => p.diff === 2 },
-  { id:'n3',     emoji:'🔴', label:'Niveau 3 — Passé',     desc:'Prétérit et imparfait',         f: p => p.diff === 3 },
-  { id:'n4',     emoji:'🟣', label:'Niveau 4 — Périphrases', desc:'Tener que, ir a, estar + -ando', f: p => p.diff === 4 },
-  { id:'bar',    emoji:'🍺', label:'Bar & tapas',           desc:'Contexte bar et sorties',       f: p => p.tags.includes('bar') },
-  { id:'trav',   emoji:'💼', label:'Travail',               desc:'Contexte professionnel',        f: p => p.tags.includes('trav') },
-  { id:'voyage', emoji:'✈️', label:'Voyage',                desc:'Transports et déplacements',    f: p => p.tags.includes('voyage') },
-  { id:'maison', emoji:'🏠', label:'Maison',                desc:'Contexte domestique',           f: p => p.tags.includes('maison') },
-  { id:'comm',   emoji:'🗣️', label:'Communication',         desc:'Parler, écrire, comprendre',   f: p => p.tags.includes('comm') },
-  { id:'emotion',emoji:'❤️', label:'Émotions',              desc:'Sentir, aimer, préférer',       f: p => p.tags.includes('emotion') },
-];
+const PHRASE_LISTS = {
+  temps: [
+    { id:'tout',   emoji:'🔥', label:'Tout',          desc:'Toutes les phrases',                f: () => true },
+    { id:'pres',   emoji:'🗣️', label:'Présent',       desc:'Indicatif présent (rég. + irrég.)', f: p => p.diff <= 2 },
+    { id:'passe',  emoji:'⏮️', label:'Passé',         desc:'Prétérit et imparfait',             f: p => p.diff === 3 },
+    { id:'peri',   emoji:'▶️', label:'Périphrases',   desc:'Ir a, tener que, estar + -ando',    f: p => p.diff === 4 },
+  ],
+  theme: [
+    { id:'bar',    emoji:'🍺', label:'Bar & tapas',    desc:'Contexte bar et sorties',           f: p => p.tags.includes('bar') },
+    { id:'trav',   emoji:'💼', label:'Travail',         desc:'Contexte professionnel',            f: p => p.tags.includes('trav') },
+    { id:'voyage', emoji:'✈️', label:'Voyage',          desc:'Transports et déplacements',        f: p => p.tags.includes('voyage') },
+    { id:'maison', emoji:'🏠', label:'Maison',          desc:'Contexte domestique',               f: p => p.tags.includes('maison') },
+    { id:'comm',   emoji:'🗣️', label:'Communication',  desc:'Parler, écrire, comprendre',        f: p => p.tags.includes('comm') },
+    { id:'emotion',emoji:'❤️', label:'Émotions',        desc:'Sentir, aimer, préférer',           f: p => p.tags.includes('emotion') },
+  ],
+};

@@ -173,6 +173,7 @@
     <button class="tab-btn active" onclick="switchTab('niveau',this)">Niveau</button>
     <button class="tab-btn" onclick="switchTab('theme',this)">Thème</button>
     <button class="tab-btn" onclick="switchTab('grammaire',this)">Grammaire</button>
+    <button class="tab-btn" onclick="switchTab('conj',this)">Conjugaison</button>
   </div>
   <div id="list-section" class="list-section"></div>
 </div>
@@ -235,6 +236,7 @@
 </div>
 
 <script src="data/verbs.js?v=176"></script>
+<script src="data/conj_extra.js?v=176"></script>
 <script src="shared/engine.js"></script>
 <script>
 // ═══════════════════════════════════════════
@@ -251,9 +253,34 @@ let hintUsed = false;
 let wrongTimer = null;
 let currentTab = 'niveau';
 
+// ── Conjugation mode ──
+const PRONOUNS = ['yo','tú','él/ella','nosotros','vosotros','ellos'];
+
+const CONJ_LISTS = [
+  { id:'cj-pres', emoji:'🗣️', label:'Présent',     tense:'pres' },
+  { id:'cj-fut',  emoji:'🔮', label:'Futur',        tense:'fut'  },
+  { id:'cj-cond', emoji:'💭', label:'Conditionnel', tense:'cond' },
+  { id:'cj-subj', emoji:'🎯', label:'Subjonctif',   tense:'subj' },
+];
+
+function buildConjDeck(list) {
+  return shuffle(
+    VERBS.flatMap(v => {
+      const forms = list.tense === 'pres'
+        ? v.conj
+        : (CONJ_EXTRA[v.inf.toLowerCase()] || {})[list.tense];
+      if (!forms) return [];
+      return PRONOUNS.map((pr, i) => ({
+        inf: v.inf + ' — ' + pr,
+        ans: [forms[i]],
+      }));
+    })
+  );
+}
+
 // ── Helpers ──
 function listVerbs(listDef) { return VERBS.filter(listDef.f); }
-function allLists() { return [...VERB_LISTS.niveau, ...VERB_LISTS.theme, ...VERB_LISTS.grammaire]; }
+function allLists() { return [...VERB_LISTS.niveau, ...VERB_LISTS.theme, ...VERB_LISTS.grammaire, ...CONJ_LISTS]; }
 function findList(id) { return allLists().find(l => l.id === id); }
 
 // ── Screen management ──
@@ -272,24 +299,27 @@ function switchTab(tab, btn) {
 
 function renderHome() {
   const sec = document.getElementById('list-section');
-  sec.innerHTML = VERB_LISTS[currentTab].map(l => {
-    const verbs = listVerbs(l);
-    const n     = verbs.length;
+  const isConj = currentTab === 'conj';
+  const lists  = isConj ? CONJ_LISTS : VERB_LISTS[currentTab];
+
+  sec.innerHTML = lists.map(l => {
+    const n     = isConj ? VERBS.length * 6 : listVerbs(l).length;
     const best  = getBest(PREFIX, l.id);
     const runs  = getRuns(PREFIX, l.id);
     const nextRun = runs + 1;
-    const runStr  = runs > 0 ? ` · Run #${nextRun} à venir` : '';
+    const runStr  = runs > 0 ? ' · Run #' + nextRun + ' à venir' : '';
+    const unit    = isConj ? 'formes' : 'verbes';
     let scoreStr;
     if (best === 0)  scoreStr = '<span style="color:rgba(255,255,255,.25)">Jamais joué</span>';
-    else if (best === n) scoreStr = `<span class="done-badge">✓ Complété ! (${n}/${n})</span>`;
-    else scoreStr = `Meilleur : <b>${best}/${n}</b>`;
+    else if (best === n) scoreStr = '<span class="done-badge">✓ Complété ! (' + n + '/' + n + ')</span>';
+    else scoreStr = 'Meilleur : <b>' + best + '/' + n + '</b>';
 
     return `
     <div class="list-card" onclick="startGame('${l.id}')">
       <div class="lc-emoji">${l.emoji}</div>
       <div class="lc-body">
         <div class="lc-name">${l.label}</div>
-        <div class="lc-desc">${n} verbes${runStr}</div>
+        <div class="lc-desc">${n} ${unit}${runStr}</div>
         <div class="lc-score">${scoreStr}</div>
       </div>
       <div class="lc-arrow">›</div>
@@ -307,7 +337,8 @@ function goHome() {
 function startGame(id) {
   currentList = findList(id);
   if (!currentList) return;
-  deck = shuffle(listVerbs(currentList));
+  const isConj = CONJ_LISTS.some(l => l.id === id);
+  deck = isConj ? buildConjDeck(currentList) : shuffle(listVerbs(currentList));
   idx  = 0; hintUsed = false;
   addRun(PREFIX, id);
   document.getElementById('run-tag').textContent  = 'Run #' + getRuns(PREFIX, id);
@@ -415,7 +446,8 @@ function clearIntervalAndRestart() {
 }
 
 function restartGame() {
-  deck = shuffle(listVerbs(currentList));
+  const isConj = CONJ_LISTS.some(l => l.id === currentList.id);
+  deck = isConj ? buildConjDeck(currentList) : shuffle(listVerbs(currentList));
   idx  = 0; hintUsed = false;
   addRun(PREFIX, currentList.id);
   document.getElementById('run-tag').textContent = 'Run #' + getRuns(PREFIX, currentList.id);
