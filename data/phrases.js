@@ -178,15 +178,60 @@ const PHRASES = [
   { es_gap:'Yo ___ (deber) irme ya.',                   es_full:'Yo debo irme ya.',                  verb:'Deber',     pronoun:'yo',       ans:['debo'],      diff:4, tags:['periph'] },
   { es_gap:'Ella ___ (seguir + gerundio) trabajando.',   es_full:'Ella sigue trabajando.',            verb:'Seguir',    pronoun:'él/ella',  ans:['sigue'],     diff:4, tags:['periph','trav'] },
   { es_gap:'Nosotros ___ (poder) quedarnos un rato más.', es_full:'Nosotros podemos quedarnos un rato más.', verb:'Poder', pronoun:'nosotros', ans:['podemos'], diff:4, tags:['periph','bar'] },
+
+  // ══════════════════════════════════════════
+  //  NIVEAU 5 : Passé composé (pretérito perfecto)
+  // ══════════════════════════════════════════
+  { es_gap:'Yo ___ (hablar) con el médico hoy.',          es_full:'Yo he hablado con el médico hoy.',       verb:'Hablar',    pronoun:'yo',       ans:['he hablado'],      diff:5, tags:['sante','comm'] },
+  { es_gap:'Tú ___ (comer) en ese restaurante antes?',    es_full:'Tú has comido en ese restaurante antes?', verb:'Comer',    pronoun:'tú',       ans:['has comido'],      diff:5, tags:['bar'] },
+  { es_gap:'Ella ___ (beber) demasiado esta noche.',       es_full:'Ella ha bebido demasiado esta noche.',    verb:'Beber',    pronoun:'él/ella',  ans:['ha bebido'],       diff:5, tags:['bar'] },
+  { es_gap:'Nosotros ___ (llegar) tarde al trabajo.',      es_full:'Nosotros hemos llegado tarde al trabajo.', verb:'Llegar',  pronoun:'nosotros', ans:['hemos llegado'],   diff:5, tags:['trav'] },
+  { es_gap:'Vosotros ___ (aprender) mucho este año.',      es_full:'Vosotros habéis aprendido mucho este año.', verb:'Aprender', pronoun:'vosotros', ans:['habéis aprendido','habeis aprendido'], diff:5, tags:['trav'] },
+  { es_gap:'Ellos ___ (terminar) el proyecto.',            es_full:'Ellos han terminado el proyecto.',        verb:'Terminar', pronoun:'ellos',    ans:['han terminado'],   diff:5, tags:['trav'] },
+  { es_gap:'Yo ___ (ver) esa película dos veces.',         es_full:'Yo he visto esa película dos veces.',     verb:'Ver',      pronoun:'yo',       ans:['he visto'],        diff:5, tags:['comm'] },
+  { es_gap:'Tú ___ (hacer) los deberes ya?',               es_full:'Tú has hecho los deberes ya?',            verb:'Hacer',   pronoun:'tú',       ans:['has hecho'],       diff:5, tags:['trav'] },
+  { es_gap:'Él ___ (ir) al médico esta semana.',           es_full:'Él ha ido al médico esta semana.',        verb:'Ir',      pronoun:'él/ella',  ans:['ha ido'],          diff:5, tags:['sante'] },
+  { es_gap:'Nosotros ___ (pedir) la cuenta.',              es_full:'Nosotros hemos pedido la cuenta.',        verb:'Pedir',   pronoun:'nosotros', ans:['hemos pedido'],    diff:5, tags:['bar'] },
+  { es_gap:'Ella ___ (escribir) un correo al jefe.',       es_full:'Ella ha escrito un correo al jefe.',      verb:'Escribir', pronoun:'él/ella', ans:['ha escrito'],      diff:5, tags:['trav','comm'] },
+  { es_gap:'Yo ___ (decir) la verdad.',                    es_full:'Yo he dicho la verdad.',                  verb:'Decir',   pronoun:'yo',       ans:['he dicho'],        diff:5, tags:['comm'] },
+  { es_gap:'¿Vosotros ___ (volver) ya de las vacaciones?', es_full:'¿Vosotros habéis vuelto ya de las vacaciones?', verb:'Volver', pronoun:'vosotros', ans:['habéis vuelto','habeis vuelto'], diff:5, tags:['voyage'] },
+  { es_gap:'Ellos ___ (abrir) una cuenta nueva.',          es_full:'Ellos han abierto una cuenta nueva.',     verb:'Abrir',   pronoun:'ellos',    ans:['han abierto'],     diff:5, tags:['argent'] },
+  { es_gap:'Yo ___ (poner) las llaves en la mesa.',        es_full:'Yo he puesto las llaves en la mesa.',     verb:'Poner',   pronoun:'yo',       ans:['he puesto'],       diff:5, tags:['maison'] },
+  { es_gap:'Tú ___ (romper) el vaso.',                     es_full:'Tú has roto el vaso.',                    verb:'Romper',  pronoun:'tú',       ans:['has roto'],        diff:5, tags:['maison','bar'] },
+  { es_gap:'Nosotros ___ (pagar) la factura.',             es_full:'Nosotros hemos pagado la factura.',       verb:'Pagar',   pronoun:'nosotros', ans:['hemos pagado'],    diff:5, tags:['argent','bar'] },
+  { es_gap:'Ella ___ (encontrar) un piso nuevo.',          es_full:'Ella ha encontrado un piso nuevo.',       verb:'Encontrar', pronoun:'él/ella', ans:['ha encontrado'],  diff:5, tags:['maison'] },
+  { es_gap:'Yo ___ (leer) ese libro.',                     es_full:'Yo he leído ese libro.',                  verb:'Leer',    pronoun:'yo',       ans:['he leído','he leido'], diff:5, tags:['comm'] },
+  { es_gap:'Ellos ___ (venir) en tren.',                   es_full:'Ellos han venido en tren.',               verb:'Venir',   pronoun:'ellos',    ans:['han venido'],      diff:5, tags:['voyage'] },
+
+  // ══════════════════════════════════════════
+  //  NIVEAU 6 : Futur simple
+  // ══════════════════════════════════════════
+  { es_gap:'Yo ___ (hablar) con él mañana.',               es_full:'Yo hablaré con él mañana.',               verb:'Hablar',   pronoun:'yo',       ans:['hablaré'],         diff:6, tags:['comm'] },
+  { es_gap:'Mañana ___ (llover).',                         es_full:'Mañana lloverá.',                          verb:'Llover',   pronoun:'él/ella',  ans:['lloverá'],         diff:6, tags:['nature'] },
+  { es_gap:'Nosotros ___ (comer) en casa el domingo.',     es_full:'Nosotros comeremos en casa el domingo.',   verb:'Comer',    pronoun:'nosotros', ans:['comeremos'],       diff:6, tags:['maison'] },
+  { es_gap:'¿Tú ___ (venir) a la fiesta?',                 es_full:'¿Tú vendrás a la fiesta?',                 verb:'Venir',   pronoun:'tú',       ans:['vendrás'],         diff:6, tags:['social'] },
+  { es_gap:'Ella ___ (tener) que trabajar el sábado.',     es_full:'Ella tendrá que trabajar el sábado.',      verb:'Tener',   pronoun:'él/ella',  ans:['tendrá'],          diff:6, tags:['trav'] },
+  { es_gap:'Vosotros ___ (poder) llamarme cuando queráis.', es_full:'Vosotros podréis llamarme cuando queráis.', verb:'Poder', pronoun:'vosotros', ans:['podréis'],         diff:6, tags:['comm'] },
+  { es_gap:'Ellos ___ (llegar) a las ocho.',               es_full:'Ellos llegarán a las ocho.',               verb:'Llegar',  pronoun:'ellos',    ans:['llegarán'],        diff:6, tags:['voyage'] },
+  { es_gap:'Yo ___ (salir) tarde del trabajo.',            es_full:'Yo saldré tarde del trabajo.',             verb:'Salir',   pronoun:'yo',       ans:['saldré'],          diff:6, tags:['trav'] },
+  { es_gap:'¿Tú ___ (hacer) la cena esta noche?',          es_full:'¿Tú harás la cena esta noche?',            verb:'Hacer',   pronoun:'tú',       ans:['harás'],           diff:6, tags:['maison','cuisine'] },
+  { es_gap:'El tiempo ___ (ser) bueno el fin de semana.',  es_full:'El tiempo será bueno el fin de semana.',   verb:'Ser',     pronoun:'él/ella',  ans:['será'],            diff:6, tags:['nature'] },
+  { es_gap:'Nosotros ___ (ir) a Bilbao en agosto.',        es_full:'Nosotros iremos a Bilbao en agosto.',      verb:'Ir',      pronoun:'nosotros', ans:['iremos'],          diff:6, tags:['voyage'] },
+  { es_gap:'Yo ___ (poner) la mesa.',                      es_full:'Yo pondré la mesa.',                       verb:'Poner',   pronoun:'yo',       ans:['pondré'],          diff:6, tags:['maison'] },
+  { es_gap:'Ellos ___ (saber) la verdad.',                 es_full:'Ellos sabrán la verdad.',                  verb:'Saber',   pronoun:'ellos',    ans:['sabrán'],          diff:6, tags:['comm'] },
+  { es_gap:'Tú ___ (decir) lo que piensas?',               es_full:'Tú dirás lo que piensas?',                 verb:'Decir',   pronoun:'tú',       ans:['dirás'],           diff:6, tags:['comm'] },
+  { es_gap:'Nosotros ___ (trabajar) juntos el mes que viene.', es_full:'Nosotros trabajaremos juntos el mes que viene.', verb:'Trabajar', pronoun:'nosotros', ans:['trabajaremos'], diff:6, tags:['trav'] },
 ];
 
 // Phrase lists for game filtering
 const PHRASE_LISTS = {
   temps: [
-    { id:'tout',   emoji:'🔥', label:'Tout',          desc:'Toutes les phrases',                f: () => true },
-    { id:'pres',   emoji:'🗣️', label:'Présent',       desc:'Indicatif présent (rég. + irrég.)', f: p => p.diff <= 2 },
-    { id:'passe',  emoji:'⏮️', label:'Passé',         desc:'Prétérit et imparfait',             f: p => p.diff === 3 },
-    { id:'peri',   emoji:'▶️', label:'Périphrases',   desc:'Ir a, tener que, estar + -ando',    f: p => p.diff === 4 },
+    { id:'tout',   emoji:'🔥', label:'Tout',           desc:'Toutes les phrases',                f: () => true },
+    { id:'pres',   emoji:'🗣️', label:'Présent',        desc:'Indicatif présent (rég. + irrég.)', f: p => p.diff <= 2 },
+    { id:'passe',  emoji:'⏮️', label:'Passé',          desc:'Prétérit et imparfait',             f: p => p.diff === 3 },
+    { id:'pc',     emoji:'🔵', label:'Passé composé',  desc:'He/has/ha + participio',            f: p => p.diff === 5 },
+    { id:'fut',    emoji:'🔮', label:'Futur simple',   desc:'Hablaré, comeré, viviré…',          f: p => p.diff === 6 },
+    { id:'peri',   emoji:'▶️', label:'Périphrases',    desc:'Ir a, tener que, estar + -ando',    f: p => p.diff === 4 },
   ],
   theme: [
     { id:'bar',    emoji:'🍺', label:'Bar & tapas',    desc:'Contexte bar et sorties',           f: p => p.tags.includes('bar') },

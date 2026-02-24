@@ -257,18 +257,28 @@ let currentTab = 'niveau';
 const PRONOUNS = ['yo','tú','él/ella','nosotros','vosotros','ellos'];
 
 const CONJ_LISTS = [
-  { id:'cj-pres', emoji:'🗣️', label:'Présent',     tense:'pres' },
-  { id:'cj-fut',  emoji:'🔮', label:'Futur',        tense:'fut'  },
-  { id:'cj-cond', emoji:'💭', label:'Conditionnel', tense:'cond' },
-  { id:'cj-subj', emoji:'🎯', label:'Subjonctif',   tense:'subj' },
+  { id:'cj-pres', emoji:'🗣️', label:'Présent',        tense:'pres' },
+  { id:'cj-pc',   emoji:'🔵', label:'Passé composé',  tense:'pc'   },
+  { id:'cj-fut',  emoji:'🔮', label:'Futur',           tense:'fut'  },
+  { id:'cj-cond', emoji:'💭', label:'Conditionnel',    tense:'cond' },
+  { id:'cj-subj', emoji:'🎯', label:'Subjonctif',      tense:'subj' },
 ];
+
+const HABER = ['he','has','ha','hemos','habéis','han'];
 
 function buildConjDeck(list) {
   return shuffle(
     VERBS.flatMap(v => {
-      const forms = list.tense === 'pres'
-        ? v.conj
-        : (CONJ_EXTRA[v.inf.toLowerCase()] || {})[list.tense];
+      let forms;
+      if (list.tense === 'pres') {
+        forms = v.conj;
+      } else if (list.tense === 'pc') {
+        const pp = (CONJ_EXTRA[v.inf.toLowerCase()] || {}).pp;
+        if (!pp) return [];
+        forms = HABER.map(aux => aux + ' ' + pp);
+      } else {
+        forms = (CONJ_EXTRA[v.inf.toLowerCase()] || {})[list.tense];
+      }
       if (!forms) return [];
       return PRONOUNS.map((pr, i) => ({
         inf: v.inf + ' — ' + pr,
