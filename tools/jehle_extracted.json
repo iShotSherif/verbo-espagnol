@@ -1,0 +1,4006 @@
+{
+  "ser": {
+    "present": [
+      "soy",
+      "eres",
+      "es",
+      "somos",
+      "sois",
+      "son"
+    ],
+    "ger": "siendo",
+    "pp": "sido",
+    "fut": [
+      "seré",
+      "serás",
+      "será",
+      "seremos",
+      "seréis",
+      "serán"
+    ],
+    "cond": [
+      "sería",
+      "serías",
+      "sería",
+      "seríamos",
+      "seríais",
+      "serían"
+    ],
+    "subj": [
+      "sea",
+      "seas",
+      "sea",
+      "seamos",
+      "seáis",
+      "sean"
+    ],
+    "pret": [
+      "fui",
+      "fuiste",
+      "fue",
+      "fuimos",
+      "fuisteis",
+      "fueron"
+    ],
+    "imp6": [
+      "era",
+      "eras",
+      "era",
+      "éramos",
+      "erais",
+      "eran"
+    ]
+  },
+  "estar": {
+    "present": [
+      "estoy",
+      "estás",
+      "está",
+      "estamos",
+      "estáis",
+      "están"
+    ],
+    "ger": "estando",
+    "pp": "estado",
+    "fut": [
+      "estaré",
+      "estarás",
+      "estará",
+      "estaremos",
+      "estaréis",
+      "estarán"
+    ],
+    "cond": [
+      "estaría",
+      "estarías",
+      "estaría",
+      "estaríamos",
+      "estaríais",
+      "estarían"
+    ],
+    "subj": [
+      "esté",
+      "estés",
+      "esté",
+      "estemos",
+      "estéis",
+      "estén"
+    ],
+    "pret": [
+      "estuve",
+      "estuviste",
+      "estuvo",
+      "estuvimos",
+      "estuvisteis",
+      "estuvieron"
+    ],
+    "imp6": [
+      "estaba",
+      "estabas",
+      "estaba",
+      "estábamos",
+      "estabais",
+      "estaban"
+    ]
+  },
+  "tener": {
+    "present": [
+      "tengo",
+      "tienes",
+      "tiene",
+      "tenemos",
+      "tenéis",
+      "tienen"
+    ],
+    "ger": "teniendo",
+    "pp": "tenido",
+    "fut": [
+      "tendré",
+      "tendrás",
+      "tendrá",
+      "tendremos",
+      "tendréis",
+      "tendrán"
+    ],
+    "cond": [
+      "tendría",
+      "tendrías",
+      "tendría",
+      "tendríamos",
+      "tendríais",
+      "tendrían"
+    ],
+    "subj": [
+      "tenga",
+      "tengas",
+      "tenga",
+      "tengamos",
+      "tengáis",
+      "tengan"
+    ],
+    "pret": [
+      "tuve",
+      "tuviste",
+      "tuvo",
+      "tuvimos",
+      "tuvisteis",
+      "tuvieron"
+    ],
+    "imp6": [
+      "tenía",
+      "tenías",
+      "tenía",
+      "teníamos",
+      "teníais",
+      "tenían"
+    ]
+  },
+  "hacer": {
+    "present": [
+      "hago",
+      "haces",
+      "hace",
+      "hacemos",
+      "hacéis",
+      "hacen"
+    ],
+    "ger": "haciendo",
+    "pp": "hecho",
+    "fut": [
+      "haré",
+      "harás",
+      "hará",
+      "haremos",
+      "haréis",
+      "harán"
+    ],
+    "cond": [
+      "haría",
+      "harías",
+      "haría",
+      "haríamos",
+      "haríais",
+      "harían"
+    ],
+    "subj": [
+      "haga",
+      "hagas",
+      "haga",
+      "hagamos",
+      "hagáis",
+      "hagan"
+    ],
+    "pret": [
+      "hice",
+      "hiciste",
+      "hizo",
+      "hicimos",
+      "hicisteis",
+      "hicieron"
+    ],
+    "imp6": [
+      "hacía",
+      "hacías",
+      "hacía",
+      "hacíamos",
+      "hacíais",
+      "hacían"
+    ]
+  },
+  "ir": {
+    "present": [
+      "voy",
+      "vas",
+      "va",
+      "vamos",
+      "vais",
+      "van"
+    ],
+    "ger": "yendo",
+    "pp": "ido",
+    "fut": [
+      "iré",
+      "irás",
+      "irá",
+      "iremos",
+      "iréis",
+      "irán"
+    ],
+    "cond": [
+      "iría",
+      "irías",
+      "iría",
+      "iríamos",
+      "iríais",
+      "irían"
+    ],
+    "subj": [
+      "vaya",
+      "vayas",
+      "vaya",
+      "vayamos",
+      "vayáis",
+      "vayan"
+    ],
+    "pret": [
+      "fui",
+      "fuiste",
+      "fue",
+      "fuimos",
+      "fuisteis",
+      "fueron"
+    ],
+    "imp6": [
+      "iba",
+      "ibas",
+      "iba",
+      "íbamos",
+      "ibais",
+      "iban"
+    ]
+  },
+  "venir": {
+    "present": [
+      "vengo",
+      "vienes",
+      "viene",
+      "venimos",
+      "venís",
+      "vienen"
+    ],
+    "ger": "viniendo",
+    "pp": "venido",
+    "fut": [
+      "vendré",
+      "vendrás",
+      "vendrá",
+      "vendremos",
+      "vendréis",
+      "vendrán"
+    ],
+    "cond": [
+      "vendría",
+      "vendrías",
+      "vendría",
+      "vendríamos",
+      "vendríais",
+      "vendrían"
+    ],
+    "subj": [
+      "venga",
+      "vengas",
+      "venga",
+      "vengamos",
+      "vengáis",
+      "vengan"
+    ],
+    "pret": [
+      "vine",
+      "viniste",
+      "vino",
+      "vinimos",
+      "vinisteis",
+      "vinieron"
+    ],
+    "imp6": [
+      "venía",
+      "venías",
+      "venía",
+      "veníamos",
+      "veníais",
+      "venían"
+    ]
+  },
+  "poder": {
+    "present": [
+      "puedo",
+      "puedes",
+      "puede",
+      "podemos",
+      "podéis",
+      "pueden"
+    ],
+    "ger": "pudiendo",
+    "pp": "podido",
+    "fut": [
+      "podré",
+      "podrás",
+      "podrá",
+      "podremos",
+      "podréis",
+      "podrán"
+    ],
+    "cond": [
+      "podría",
+      "podrías",
+      "podría",
+      "podríamos",
+      "podríais",
+      "podrían"
+    ],
+    "subj": [
+      "pueda",
+      "puedas",
+      "pueda",
+      "podamos",
+      "podáis",
+      "puedan"
+    ],
+    "pret": [
+      "pude",
+      "pudiste",
+      "pudo",
+      "pudimos",
+      "pudisteis",
+      "pudieron"
+    ],
+    "imp6": [
+      "podía",
+      "podías",
+      "podía",
+      "podíamos",
+      "podíais",
+      "podían"
+    ]
+  },
+  "querer": {
+    "present": [
+      "quiero",
+      "quieres",
+      "quiere",
+      "queremos",
+      "queréis",
+      "quieren"
+    ],
+    "ger": "queriendo",
+    "pp": "querido",
+    "fut": [
+      "querré",
+      "querrás",
+      "querrá",
+      "querremos",
+      "querréis",
+      "querrán"
+    ],
+    "cond": [
+      "querría",
+      "querrías",
+      "querría",
+      "querríamos",
+      "querríais",
+      "querrían"
+    ],
+    "subj": [
+      "quiera",
+      "quieras",
+      "quiera",
+      "queramos",
+      "queráis",
+      "quieran"
+    ],
+    "pret": [
+      "quise",
+      "quisiste",
+      "quiso",
+      "quisimos",
+      "quisisteis",
+      "quisieron"
+    ],
+    "imp6": [
+      "quería",
+      "querías",
+      "quería",
+      "queríamos",
+      "queríais",
+      "querían"
+    ]
+  },
+  "decir": {
+    "present": [
+      "digo",
+      "dices",
+      "dice",
+      "decimos",
+      "decís",
+      "dicen"
+    ],
+    "ger": "diciendo",
+    "pp": "dicho",
+    "fut": [
+      "diré",
+      "dirás",
+      "dirá",
+      "diremos",
+      "diréis",
+      "dirán"
+    ],
+    "cond": [
+      "diría",
+      "dirías",
+      "diría",
+      "diríamos",
+      "diríais",
+      "dirían"
+    ],
+    "subj": [
+      "diga",
+      "digas",
+      "diga",
+      "digamos",
+      "digáis",
+      "digan"
+    ],
+    "pret": [
+      "dije",
+      "dijiste",
+      "dijo",
+      "dijimos",
+      "dijisteis",
+      "dijeron"
+    ],
+    "imp6": [
+      "decía",
+      "decías",
+      "decía",
+      "decíamos",
+      "decíais",
+      "decían"
+    ]
+  },
+  "ver": {
+    "present": [
+      "veo",
+      "ves",
+      "ve",
+      "vemos",
+      "veis",
+      "ven"
+    ],
+    "ger": "viendo",
+    "pp": "visto",
+    "fut": [
+      "veré",
+      "verás",
+      "verá",
+      "veremos",
+      "veréis",
+      "verán"
+    ],
+    "cond": [
+      "vería",
+      "verías",
+      "vería",
+      "veríamos",
+      "veríais",
+      "verían"
+    ],
+    "subj": [
+      "vea",
+      "veas",
+      "vea",
+      "veamos",
+      "veáis",
+      "vean"
+    ],
+    "pret": [
+      "vi",
+      "viste",
+      "vio",
+      "vimos",
+      "visteis",
+      "vieron"
+    ],
+    "imp6": [
+      "veía",
+      "veías",
+      "veía",
+      "veíamos",
+      "veíais",
+      "veían"
+    ]
+  },
+  "dar": {
+    "present": [
+      "doy",
+      "das",
+      "da",
+      "damos",
+      "dais",
+      "dan"
+    ],
+    "ger": "dando",
+    "pp": "dado",
+    "fut": [
+      "daré",
+      "darás",
+      "dará",
+      "daremos",
+      "daréis",
+      "darán"
+    ],
+    "cond": [
+      "daría",
+      "darías",
+      "daría",
+      "daríamos",
+      "daríais",
+      "darían"
+    ],
+    "subj": [
+      "dé",
+      "des",
+      "dé",
+      "demos",
+      "deis",
+      "den"
+    ],
+    "pret": [
+      "di",
+      "diste",
+      "dio",
+      "dimos",
+      "disteis",
+      "dieron"
+    ],
+    "imp6": [
+      "daba",
+      "dabas",
+      "daba",
+      "dábamos",
+      "dabais",
+      "daban"
+    ]
+  },
+  "saber": {
+    "present": [
+      "sé",
+      "sabes",
+      "sabe",
+      "sabemos",
+      "sabéis",
+      "saben"
+    ],
+    "ger": "sabiendo",
+    "pp": "sabido",
+    "fut": [
+      "sabré",
+      "sabrás",
+      "sabrá",
+      "sabremos",
+      "sabréis",
+      "sabrán"
+    ],
+    "cond": [
+      "sabría",
+      "sabrías",
+      "sabría",
+      "sabríamos",
+      "sabríais",
+      "sabrían"
+    ],
+    "subj": [
+      "sepa",
+      "sepas",
+      "sepa",
+      "sepamos",
+      "sepáis",
+      "sepan"
+    ],
+    "pret": [
+      "supe",
+      "supiste",
+      "supo",
+      "supimos",
+      "supisteis",
+      "supieron"
+    ],
+    "imp6": [
+      "sabía",
+      "sabías",
+      "sabía",
+      "sabíamos",
+      "sabíais",
+      "sabían"
+    ]
+  },
+  "conocer": {
+    "present": [
+      "conozco",
+      "conoces",
+      "conoce",
+      "conocemos",
+      "conocéis",
+      "conocen"
+    ],
+    "ger": "conociendo",
+    "pp": "conocido",
+    "fut": [
+      "conoceré",
+      "conocerás",
+      "conocerá",
+      "conoceremos",
+      "conoceréis",
+      "conocerán"
+    ],
+    "cond": [
+      "conocería",
+      "conocerías",
+      "conocería",
+      "conoceríamos",
+      "conoceríais",
+      "conocerían"
+    ],
+    "subj": [
+      "conozca",
+      "conozcas",
+      "conozca",
+      "conozcamos",
+      "conozcáis",
+      "conozcan"
+    ],
+    "pret": [
+      "conocí",
+      "conociste",
+      "conoció",
+      "conocimos",
+      "conocisteis",
+      "conocieron"
+    ],
+    "imp6": [
+      "conocía",
+      "conocías",
+      "conocía",
+      "conocíamos",
+      "conocíais",
+      "conocían"
+    ]
+  },
+  "hablar": {
+    "present": [
+      "hablo",
+      "hablas",
+      "habla",
+      "hablamos",
+      "habláis",
+      "hablan"
+    ],
+    "ger": "hablando",
+    "pp": "hablado",
+    "fut": [
+      "hablaré",
+      "hablarás",
+      "hablará",
+      "hablaremos",
+      "hablaréis",
+      "hablarán"
+    ],
+    "cond": [
+      "hablaría",
+      "hablarías",
+      "hablaría",
+      "hablaríamos",
+      "hablaríais",
+      "hablarían"
+    ],
+    "subj": [
+      "hable",
+      "hables",
+      "hable",
+      "hablemos",
+      "habléis",
+      "hablen"
+    ],
+    "pret": [
+      "hablé",
+      "hablaste",
+      "habló",
+      "hablamos",
+      "hablasteis",
+      "hablaron"
+    ],
+    "imp6": [
+      "hablaba",
+      "hablabas",
+      "hablaba",
+      "hablábamos",
+      "hablabais",
+      "hablaban"
+    ]
+  },
+  "comer": {
+    "present": [
+      "como",
+      "comes",
+      "come",
+      "comemos",
+      "coméis",
+      "comen"
+    ],
+    "ger": "comiendo",
+    "pp": "comido",
+    "fut": [
+      "comeré",
+      "comerás",
+      "comerá",
+      "comeremos",
+      "comeréis",
+      "comerán"
+    ],
+    "cond": [
+      "comería",
+      "comerías",
+      "comería",
+      "comeríamos",
+      "comeríais",
+      "comerían"
+    ],
+    "subj": [
+      "coma",
+      "comas",
+      "coma",
+      "comamos",
+      "comáis",
+      "coman"
+    ],
+    "pret": [
+      "comí",
+      "comiste",
+      "comió",
+      "comimos",
+      "comisteis",
+      "comieron"
+    ],
+    "imp6": [
+      "comía",
+      "comías",
+      "comía",
+      "comíamos",
+      "comíais",
+      "comían"
+    ]
+  },
+  "beber": {
+    "present": [
+      "bebo",
+      "bebes",
+      "bebe",
+      "bebemos",
+      "bebéis",
+      "beben"
+    ],
+    "ger": "bebiendo",
+    "pp": "bebido",
+    "fut": [
+      "beberé",
+      "beberás",
+      "beberá",
+      "beberemos",
+      "beberéis",
+      "beberán"
+    ],
+    "cond": [
+      "bebería",
+      "beberías",
+      "bebería",
+      "beberíamos",
+      "beberíais",
+      "beberían"
+    ],
+    "subj": [
+      "beba",
+      "bebas",
+      "beba",
+      "bebamos",
+      "bebáis",
+      "beban"
+    ],
+    "pret": [
+      "bebí",
+      "bebiste",
+      "bebió",
+      "bebimos",
+      "bebisteis",
+      "bebieron"
+    ],
+    "imp6": [
+      "bebía",
+      "bebías",
+      "bebía",
+      "bebíamos",
+      "bebíais",
+      "bebían"
+    ]
+  },
+  "pedir": {
+    "present": [
+      "pido",
+      "pides",
+      "pide",
+      "pedimos",
+      "pedís",
+      "piden"
+    ],
+    "ger": "pidiendo",
+    "pp": "pedido",
+    "fut": [
+      "pediré",
+      "pedirás",
+      "pedirá",
+      "pediremos",
+      "pediréis",
+      "pedirán"
+    ],
+    "cond": [
+      "pediría",
+      "pedirías",
+      "pediría",
+      "pediríamos",
+      "pediríais",
+      "pedirían"
+    ],
+    "subj": [
+      "pida",
+      "pidas",
+      "pida",
+      "pidamos",
+      "pidáis",
+      "pidan"
+    ],
+    "pret": [
+      "pedí",
+      "pediste",
+      "pidió",
+      "pedimos",
+      "pedisteis",
+      "pidieron"
+    ],
+    "imp6": [
+      "pedía",
+      "pedías",
+      "pedía",
+      "pedíamos",
+      "pedíais",
+      "pedían"
+    ]
+  },
+  "salir": {
+    "present": [
+      "salgo",
+      "sales",
+      "sale",
+      "salimos",
+      "salís",
+      "salen"
+    ],
+    "ger": "saliendo",
+    "pp": "salido",
+    "fut": [
+      "saldré",
+      "saldrás",
+      "saldrá",
+      "saldremos",
+      "saldréis",
+      "saldrán"
+    ],
+    "cond": [
+      "saldría",
+      "saldrías",
+      "saldría",
+      "saldríamos",
+      "saldríais",
+      "saldrían"
+    ],
+    "subj": [
+      "salga",
+      "salgas",
+      "salga",
+      "salgamos",
+      "salgáis",
+      "salgan"
+    ],
+    "pret": [
+      "salí",
+      "saliste",
+      "salió",
+      "salimos",
+      "salisteis",
+      "salieron"
+    ],
+    "imp6": [
+      "salía",
+      "salías",
+      "salía",
+      "salíamos",
+      "salíais",
+      "salían"
+    ]
+  },
+  "llegar": {
+    "present": [
+      "llego",
+      "llegas",
+      "llega",
+      "llegamos",
+      "llegáis",
+      "llegan"
+    ],
+    "ger": "llegando",
+    "pp": "llegado",
+    "fut": [
+      "llegaré",
+      "llegarás",
+      "llegará",
+      "llegaremos",
+      "llegaréis",
+      "llegarán"
+    ],
+    "cond": [
+      "llegaría",
+      "llegarías",
+      "llegaría",
+      "llegaríamos",
+      "llegaríais",
+      "llegarían"
+    ],
+    "subj": [
+      "llegue",
+      "llegues",
+      "llegue",
+      "lleguemos",
+      "lleguéis",
+      "lleguen"
+    ],
+    "pret": [
+      "llegué",
+      "llegaste",
+      "llegó",
+      "llegamos",
+      "llegasteis",
+      "llegaron"
+    ],
+    "imp6": [
+      "llegaba",
+      "llegabas",
+      "llegaba",
+      "llegábamos",
+      "llegabais",
+      "llegaban"
+    ]
+  },
+  "volver": {
+    "present": [
+      "vuelvo",
+      "vuelves",
+      "vuelve",
+      "volvemos",
+      "volvéis",
+      "vuelven"
+    ],
+    "ger": "volviendo",
+    "pp": "vuelto",
+    "fut": [
+      "volveré",
+      "volverás",
+      "volverá",
+      "volveremos",
+      "volveréis",
+      "volverán"
+    ],
+    "cond": [
+      "volvería",
+      "volverías",
+      "volvería",
+      "volveríamos",
+      "volveríais",
+      "volverían"
+    ],
+    "subj": [
+      "vuelva",
+      "vuelvas",
+      "vuelva",
+      "volvamos",
+      "volváis",
+      "vuelvan"
+    ],
+    "pret": [
+      "volví",
+      "volviste",
+      "volvió",
+      "volvimos",
+      "volvisteis",
+      "volvieron"
+    ],
+    "imp6": [
+      "volvía",
+      "volvías",
+      "volvía",
+      "volvíamos",
+      "volvíais",
+      "volvían"
+    ]
+  },
+  "dormir": {
+    "present": [
+      "duermo",
+      "duermes",
+      "duerme",
+      "dormimos",
+      "dormís",
+      "duermen"
+    ],
+    "ger": "durmiendo",
+    "pp": "dormido",
+    "fut": [
+      "dormiré",
+      "dormirás",
+      "dormirá",
+      "dormiremos",
+      "dormiréis",
+      "dormirán"
+    ],
+    "cond": [
+      "dormiría",
+      "dormirías",
+      "dormiría",
+      "dormiríamos",
+      "dormiríais",
+      "dormirían"
+    ],
+    "subj": [
+      "duerma",
+      "duermas",
+      "duerma",
+      "durmamos",
+      "durmáis",
+      "duerman"
+    ],
+    "pret": [
+      "dormí",
+      "dormiste",
+      "durmió",
+      "dormimos",
+      "dormisteis",
+      "durmieron"
+    ],
+    "imp6": [
+      "dormía",
+      "dormías",
+      "dormía",
+      "dormíamos",
+      "dormíais",
+      "dormían"
+    ]
+  },
+  "levantar": {
+    "present": [
+      "levanto",
+      "levantas",
+      "levanta",
+      "levantamos",
+      "levantáis",
+      "levantan"
+    ],
+    "ger": "levantando",
+    "pp": "levantado",
+    "fut": [
+      "levantaré",
+      "levantarás",
+      "levantará",
+      "levantaremos",
+      "levantaréis",
+      "levantarán"
+    ],
+    "cond": [
+      "levantaría",
+      "levantarías",
+      "levantaría",
+      "levantaríamos",
+      "levantaríais",
+      "levantarían"
+    ],
+    "subj": [
+      "levante",
+      "levantes",
+      "levante",
+      "levantemos",
+      "levantéis",
+      "levanten"
+    ],
+    "pret": [
+      "levanté",
+      "levantaste",
+      "levantó",
+      "levantamos",
+      "levantasteis",
+      "levantaron"
+    ],
+    "imp6": [
+      "levantaba",
+      "levantabas",
+      "levantaba",
+      "levantábamos",
+      "levantabais",
+      "levantaban"
+    ]
+  },
+  "sentar": {
+    "present": [
+      "siento",
+      "sientas",
+      "sienta",
+      "sentamos",
+      "sentáis",
+      "sientan"
+    ],
+    "ger": "sentando",
+    "pp": "sentado",
+    "fut": [
+      "sentaré",
+      "sentarás",
+      "sentará",
+      "sentaremos",
+      "sentaréis",
+      "sentarán"
+    ],
+    "cond": [
+      "sentaría",
+      "sentarías",
+      "sentaría",
+      "sentaríamos",
+      "sentaríais",
+      "sentarían"
+    ],
+    "subj": [
+      "siente",
+      "sientes",
+      "siente",
+      "sentemos",
+      "sentéis",
+      "sienten"
+    ],
+    "pret": [
+      "senté",
+      "sentaste",
+      "sentó",
+      "sentamos",
+      "sentasteis",
+      "sentaron"
+    ],
+    "imp6": [
+      "sentaba",
+      "sentabas",
+      "sentaba",
+      "sentábamos",
+      "sentabais",
+      "sentaban"
+    ]
+  },
+  "comprar": {
+    "present": [
+      "compro",
+      "compras",
+      "compra",
+      "compramos",
+      "compráis",
+      "compran"
+    ],
+    "ger": "comprando",
+    "pp": "comprado",
+    "fut": [
+      "compraré",
+      "comprarás",
+      "comprará",
+      "compraremos",
+      "compraréis",
+      "comprarán"
+    ],
+    "cond": [
+      "compraría",
+      "comprarías",
+      "compraría",
+      "compraríamos",
+      "compraríais",
+      "comprarían"
+    ],
+    "subj": [
+      "compre",
+      "compres",
+      "compre",
+      "compremos",
+      "compréis",
+      "compren"
+    ],
+    "pret": [
+      "compré",
+      "compraste",
+      "compró",
+      "compramos",
+      "comprasteis",
+      "compraron"
+    ],
+    "imp6": [
+      "compraba",
+      "comprabas",
+      "compraba",
+      "comprábamos",
+      "comprabais",
+      "compraban"
+    ]
+  },
+  "pagar": {
+    "present": [
+      "pago",
+      "pagas",
+      "paga",
+      "pagamos",
+      "pagáis",
+      "pagan"
+    ],
+    "ger": "pagando",
+    "pp": "pagado",
+    "fut": [
+      "pagaré",
+      "pagarás",
+      "pagará",
+      "pagaremos",
+      "pagaréis",
+      "pagarán"
+    ],
+    "cond": [
+      "pagaría",
+      "pagarías",
+      "pagaría",
+      "pagaríamos",
+      "pagaríais",
+      "pagarían"
+    ],
+    "subj": [
+      "pague",
+      "pagues",
+      "pague",
+      "paguemos",
+      "paguéis",
+      "paguen"
+    ],
+    "pret": [
+      "pagué",
+      "pagaste",
+      "pagó",
+      "pagamos",
+      "pagasteis",
+      "pagaron"
+    ],
+    "imp6": [
+      "pagaba",
+      "pagabas",
+      "pagaba",
+      "pagábamos",
+      "pagabais",
+      "pagaban"
+    ]
+  },
+  "gustar": {
+    "present": [
+      "gusto",
+      "gustas",
+      "gusta",
+      "gustamos",
+      "gustáis",
+      "gustan"
+    ],
+    "ger": "gustando",
+    "pp": "gustado",
+    "fut": [
+      "gustaré",
+      "gustarás",
+      "gustará",
+      "gustaremos",
+      "gustaréis",
+      "gustarán"
+    ],
+    "cond": [
+      "gustaría",
+      "gustarías",
+      "gustaría",
+      "gustaríamos",
+      "gustaríais",
+      "gustarían"
+    ],
+    "subj": [
+      "guste",
+      "gustes",
+      "guste",
+      "gustemos",
+      "gustéis",
+      "gusten"
+    ],
+    "pret": [
+      "gusté",
+      "gustaste",
+      "gustó",
+      "gustamos",
+      "gustasteis",
+      "gustaron"
+    ],
+    "imp6": [
+      "gustaba",
+      "gustabas",
+      "gustaba",
+      "gustábamos",
+      "gustabais",
+      "gustaban"
+    ]
+  },
+  "vivir": {
+    "present": [
+      "vivo",
+      "vives",
+      "vive",
+      "vivimos",
+      "vivís",
+      "viven"
+    ],
+    "ger": "viviendo",
+    "pp": "vivido",
+    "fut": [
+      "viviré",
+      "vivirás",
+      "vivirá",
+      "viviremos",
+      "viviréis",
+      "vivirán"
+    ],
+    "cond": [
+      "viviría",
+      "vivirías",
+      "viviría",
+      "viviríamos",
+      "viviríais",
+      "vivirían"
+    ],
+    "subj": [
+      "viva",
+      "vivas",
+      "viva",
+      "vivamos",
+      "viváis",
+      "vivan"
+    ],
+    "pret": [
+      "viví",
+      "viviste",
+      "vivió",
+      "vivimos",
+      "vivisteis",
+      "vivieron"
+    ],
+    "imp6": [
+      "vivía",
+      "vivías",
+      "vivía",
+      "vivíamos",
+      "vivíais",
+      "vivían"
+    ]
+  },
+  "trabajar": {
+    "present": [
+      "trabajo",
+      "trabajas",
+      "trabaja",
+      "trabajamos",
+      "trabajáis",
+      "trabajan"
+    ],
+    "ger": "trabajando",
+    "pp": "trabajado",
+    "fut": [
+      "trabajaré",
+      "trabajarás",
+      "trabajará",
+      "trabajaremos",
+      "trabajaréis",
+      "trabajarán"
+    ],
+    "cond": [
+      "trabajaría",
+      "trabajarías",
+      "trabajaría",
+      "trabajaríamos",
+      "trabajaríais",
+      "trabajarían"
+    ],
+    "subj": [
+      "trabaje",
+      "trabajes",
+      "trabaje",
+      "trabajemos",
+      "trabajéis",
+      "trabajen"
+    ],
+    "pret": [
+      "trabajé",
+      "trabajaste",
+      "trabajó",
+      "trabajamos",
+      "trabajasteis",
+      "trabajaron"
+    ],
+    "imp6": [
+      "trabajaba",
+      "trabajabas",
+      "trabajaba",
+      "trabajábamos",
+      "trabajabais",
+      "trabajaban"
+    ]
+  },
+  "estudiar": {
+    "present": [
+      "estudio",
+      "estudias",
+      "estudia",
+      "estudiamos",
+      "estudiáis",
+      "estudian"
+    ],
+    "ger": "estudiando",
+    "pp": "estudiado",
+    "fut": [
+      "estudiaré",
+      "estudiarás",
+      "estudiará",
+      "estudiaremos",
+      "estudiaréis",
+      "estudiarán"
+    ],
+    "cond": [
+      "estudiaría",
+      "estudiarías",
+      "estudiaría",
+      "estudiaríamos",
+      "estudiaríais",
+      "estudiarían"
+    ],
+    "subj": [
+      "estudie",
+      "estudies",
+      "estudie",
+      "estudiemos",
+      "estudiéis",
+      "estudien"
+    ],
+    "pret": [
+      "estudié",
+      "estudiaste",
+      "estudió",
+      "estudiamos",
+      "estudiasteis",
+      "estudiaron"
+    ],
+    "imp6": [
+      "estudiaba",
+      "estudiabas",
+      "estudiaba",
+      "estudiábamos",
+      "estudiabais",
+      "estudiaban"
+    ]
+  },
+  "aprender": {
+    "present": [
+      "aprendo",
+      "aprendes",
+      "aprende",
+      "aprendemos",
+      "aprendéis",
+      "aprenden"
+    ],
+    "ger": "aprendiendo",
+    "pp": "aprendido",
+    "fut": [
+      "aprenderé",
+      "aprenderás",
+      "aprenderá",
+      "aprenderemos",
+      "aprenderéis",
+      "aprenderán"
+    ],
+    "cond": [
+      "aprendería",
+      "aprenderías",
+      "aprendería",
+      "aprenderíamos",
+      "aprenderíais",
+      "aprenderían"
+    ],
+    "subj": [
+      "aprenda",
+      "aprendas",
+      "aprenda",
+      "aprendamos",
+      "aprendáis",
+      "aprendan"
+    ],
+    "pret": [
+      "aprendí",
+      "aprendiste",
+      "aprendió",
+      "aprendimos",
+      "aprendisteis",
+      "aprendieron"
+    ],
+    "imp6": [
+      "aprendía",
+      "aprendías",
+      "aprendía",
+      "aprendíamos",
+      "aprendíais",
+      "aprendían"
+    ]
+  },
+  "enseñar": {
+    "present": [
+      "enseño",
+      "enseñas",
+      "enseña",
+      "enseñamos",
+      "enseñáis",
+      "enseñan"
+    ],
+    "ger": "enseñando",
+    "pp": "enseñado",
+    "fut": [
+      "enseñaré",
+      "enseñarás",
+      "enseñará",
+      "enseñaremos",
+      "enseñaréis",
+      "enseñarán"
+    ],
+    "cond": [
+      "enseñaría",
+      "enseñarías",
+      "enseñaría",
+      "enseñaríamos",
+      "enseñaríais",
+      "enseñarían"
+    ],
+    "subj": [
+      "enseñe",
+      "enseñes",
+      "enseñe",
+      "enseñemos",
+      "enseñéis",
+      "enseñen"
+    ],
+    "pret": [
+      "enseñé",
+      "enseñaste",
+      "enseñó",
+      "enseñamos",
+      "enseñasteis",
+      "enseñaron"
+    ],
+    "imp6": [
+      "enseñaba",
+      "enseñabas",
+      "enseñaba",
+      "enseñábamos",
+      "enseñabais",
+      "enseñaban"
+    ]
+  },
+  "escribir": {
+    "present": [
+      "escribo",
+      "escribes",
+      "escribe",
+      "escribimos",
+      "escribís",
+      "escriben"
+    ],
+    "ger": "escribiendo",
+    "pp": "escrito",
+    "fut": [
+      "escribiré",
+      "escribirás",
+      "escribirá",
+      "escribiremos",
+      "escribiréis",
+      "escribirán"
+    ],
+    "cond": [
+      "escribiría",
+      "escribirías",
+      "escribiría",
+      "escribiríamos",
+      "escribiríais",
+      "escribirían"
+    ],
+    "subj": [
+      "escriba",
+      "escribas",
+      "escriba",
+      "escribamos",
+      "escribáis",
+      "escriban"
+    ],
+    "pret": [
+      "escribí",
+      "escribiste",
+      "escribió",
+      "escribimos",
+      "escribisteis",
+      "escribieron"
+    ],
+    "imp6": [
+      "escribía",
+      "escribías",
+      "escribía",
+      "escribíamos",
+      "escribíais",
+      "escribían"
+    ]
+  },
+  "leer": {
+    "present": [
+      "leo",
+      "lees",
+      "lee",
+      "leemos",
+      "leéis",
+      "leen"
+    ],
+    "ger": "leyendo",
+    "pp": "leído",
+    "fut": [
+      "leeré",
+      "leerás",
+      "leerá",
+      "leeremos",
+      "leeréis",
+      "leerán"
+    ],
+    "cond": [
+      "leería",
+      "leerías",
+      "leería",
+      "leeríamos",
+      "leeríais",
+      "leerían"
+    ],
+    "subj": [
+      "lea",
+      "leas",
+      "lea",
+      "leamos",
+      "leáis",
+      "lean"
+    ],
+    "pret": [
+      "leí",
+      "leíste",
+      "leyó",
+      "leímos",
+      "leísteis",
+      "leyeron"
+    ],
+    "imp6": [
+      "leía",
+      "leías",
+      "leía",
+      "leíamos",
+      "leíais",
+      "leían"
+    ]
+  },
+  "escuchar": {
+    "present": [
+      "escucho",
+      "escuchas",
+      "escucha",
+      "escuchamos",
+      "escucháis",
+      "escuchan"
+    ],
+    "ger": "escuchando",
+    "pp": "escuchado",
+    "fut": [
+      "escucharé",
+      "escucharás",
+      "escuchará",
+      "escucharemos",
+      "escucharéis",
+      "escucharán"
+    ],
+    "cond": [
+      "escucharía",
+      "escucharías",
+      "escucharía",
+      "escucharíamos",
+      "escucharíais",
+      "escucharían"
+    ],
+    "subj": [
+      "escuche",
+      "escuches",
+      "escuche",
+      "escuchemos",
+      "escuchéis",
+      "escuchen"
+    ],
+    "pret": [
+      "escuché",
+      "escuchaste",
+      "escuchó",
+      "escuchamos",
+      "escuchasteis",
+      "escucharon"
+    ],
+    "imp6": [
+      "escuchaba",
+      "escuchabas",
+      "escuchaba",
+      "escuchábamos",
+      "escuchabais",
+      "escuchaban"
+    ]
+  },
+  "mirar": {
+    "present": [
+      "miro",
+      "miras",
+      "mira",
+      "miramos",
+      "miráis",
+      "miran"
+    ],
+    "ger": "mirando",
+    "pp": "mirado",
+    "fut": [
+      "miraré",
+      "mirarás",
+      "mirará",
+      "miraremos",
+      "miraréis",
+      "mirarán"
+    ],
+    "cond": [
+      "miraría",
+      "mirarías",
+      "miraría",
+      "miraríamos",
+      "miraríais",
+      "mirarían"
+    ],
+    "subj": [
+      "mire",
+      "mires",
+      "mire",
+      "miremos",
+      "miréis",
+      "miren"
+    ],
+    "pret": [
+      "miré",
+      "miraste",
+      "miró",
+      "miramos",
+      "mirasteis",
+      "miraron"
+    ],
+    "imp6": [
+      "miraba",
+      "mirabas",
+      "miraba",
+      "mirábamos",
+      "mirabais",
+      "miraban"
+    ]
+  },
+  "buscar": {
+    "present": [
+      "busco",
+      "buscas",
+      "busca",
+      "buscamos",
+      "buscáis",
+      "buscan"
+    ],
+    "ger": "buscando",
+    "pp": "buscado",
+    "fut": [
+      "buscaré",
+      "buscarás",
+      "buscará",
+      "buscaremos",
+      "buscaréis",
+      "buscarán"
+    ],
+    "cond": [
+      "buscaría",
+      "buscarías",
+      "buscaría",
+      "buscaríamos",
+      "buscaríais",
+      "buscarían"
+    ],
+    "subj": [
+      "busque",
+      "busques",
+      "busque",
+      "busquemos",
+      "busquéis",
+      "busquen"
+    ],
+    "pret": [
+      "busqué",
+      "buscaste",
+      "buscó",
+      "buscamos",
+      "buscasteis",
+      "buscaron"
+    ],
+    "imp6": [
+      "buscaba",
+      "buscabas",
+      "buscaba",
+      "buscábamos",
+      "buscabais",
+      "buscaban"
+    ]
+  },
+  "encontrar": {
+    "present": [
+      "encuentro",
+      "encuentras",
+      "encuentra",
+      "encontramos",
+      "encontráis",
+      "encuentran"
+    ],
+    "ger": "encontrando",
+    "pp": "encontrado",
+    "fut": [
+      "encontraré",
+      "encontrarás",
+      "encontrará",
+      "encontraremos",
+      "encontraréis",
+      "encontrarán"
+    ],
+    "cond": [
+      "encontraría",
+      "encontrarías",
+      "encontraría",
+      "encontraríamos",
+      "encontraríais",
+      "encontrarían"
+    ],
+    "subj": [
+      "encuentre",
+      "encuentres",
+      "encuentre",
+      "encontremos",
+      "encontréis",
+      "encuentren"
+    ],
+    "pret": [
+      "encontré",
+      "encontraste",
+      "encontró",
+      "encontramos",
+      "encontrasteis",
+      "encontraron"
+    ],
+    "imp6": [
+      "encontraba",
+      "encontrabas",
+      "encontraba",
+      "encontrábamos",
+      "encontrabais",
+      "encontraban"
+    ]
+  },
+  "perder": {
+    "present": [
+      "pierdo",
+      "pierdes",
+      "pierde",
+      "perdemos",
+      "perdéis",
+      "pierden"
+    ],
+    "ger": "perdiendo",
+    "pp": "perdido",
+    "fut": [
+      "perderé",
+      "perderás",
+      "perderá",
+      "perderemos",
+      "perderéis",
+      "perderán"
+    ],
+    "cond": [
+      "perdería",
+      "perderías",
+      "perdería",
+      "perderíamos",
+      "perderíais",
+      "perderían"
+    ],
+    "subj": [
+      "pierda",
+      "pierdas",
+      "pierda",
+      "perdamos",
+      "perdáis",
+      "pierdan"
+    ],
+    "pret": [
+      "perdí",
+      "perdiste",
+      "perdió",
+      "perdimos",
+      "perdisteis",
+      "perdieron"
+    ],
+    "imp6": [
+      "perdía",
+      "perdías",
+      "perdía",
+      "perdíamos",
+      "perdíais",
+      "perdían"
+    ]
+  },
+  "ganar": {
+    "present": [
+      "gano",
+      "ganas",
+      "gana",
+      "ganamos",
+      "ganáis",
+      "ganan"
+    ],
+    "ger": "ganando",
+    "pp": "ganado",
+    "fut": [
+      "ganaré",
+      "ganarás",
+      "ganará",
+      "ganaremos",
+      "ganaréis",
+      "ganarán"
+    ],
+    "cond": [
+      "ganaría",
+      "ganarías",
+      "ganaría",
+      "ganaríamos",
+      "ganaríais",
+      "ganarían"
+    ],
+    "subj": [
+      "gane",
+      "ganes",
+      "gane",
+      "ganemos",
+      "ganéis",
+      "ganen"
+    ],
+    "pret": [
+      "gané",
+      "ganaste",
+      "ganó",
+      "ganamos",
+      "ganasteis",
+      "ganaron"
+    ],
+    "imp6": [
+      "ganaba",
+      "ganabas",
+      "ganaba",
+      "ganábamos",
+      "ganabais",
+      "ganaban"
+    ]
+  },
+  "gastar": {
+    "present": [
+      "gasto",
+      "gastas",
+      "gasta",
+      "gastamos",
+      "gastáis",
+      "gastan"
+    ],
+    "ger": "gastando",
+    "pp": "gastado",
+    "fut": [
+      "gastaré",
+      "gastarás",
+      "gastará",
+      "gastaremos",
+      "gastaréis",
+      "gastarán"
+    ],
+    "cond": [
+      "gastaría",
+      "gastarías",
+      "gastaría",
+      "gastaríamos",
+      "gastaríais",
+      "gastarían"
+    ],
+    "subj": [
+      "gaste",
+      "gastes",
+      "gaste",
+      "gastemos",
+      "gastéis",
+      "gasten"
+    ],
+    "pret": [
+      "gasté",
+      "gastaste",
+      "gastó",
+      "gastamos",
+      "gastasteis",
+      "gastaron"
+    ],
+    "imp6": [
+      "gastaba",
+      "gastabas",
+      "gastaba",
+      "gastábamos",
+      "gastabais",
+      "gastaban"
+    ]
+  },
+  "ahorrar": {
+    "present": [
+      "ahorro",
+      "ahorras",
+      "ahorra",
+      "ahorramos",
+      "ahorráis",
+      "ahorran"
+    ],
+    "ger": "ahorrando",
+    "pp": "ahorrado",
+    "fut": [
+      "ahorraré",
+      "ahorrarás",
+      "ahorrará",
+      "ahorraremos",
+      "ahorraréis",
+      "ahorrarán"
+    ],
+    "cond": [
+      "ahorraría",
+      "ahorrarías",
+      "ahorraría",
+      "ahorraríamos",
+      "ahorraríais",
+      "ahorrarían"
+    ],
+    "subj": [
+      "ahorre",
+      "ahorres",
+      "ahorre",
+      "ahorremos",
+      "ahorréis",
+      "ahorren"
+    ],
+    "pret": [
+      "ahorré",
+      "ahorraste",
+      "ahorró",
+      "ahorramos",
+      "ahorrasteis",
+      "ahorraron"
+    ],
+    "imp6": [
+      "ahorraba",
+      "ahorrabas",
+      "ahorraba",
+      "ahorrábamos",
+      "ahorrabais",
+      "ahorraban"
+    ]
+  },
+  "llevar": {
+    "present": [
+      "llevo",
+      "llevas",
+      "lleva",
+      "llevamos",
+      "lleváis",
+      "llevan"
+    ],
+    "ger": "llevando",
+    "pp": "llevado",
+    "fut": [
+      "llevaré",
+      "llevarás",
+      "llevará",
+      "llevaremos",
+      "llevaréis",
+      "llevarán"
+    ],
+    "cond": [
+      "llevaría",
+      "llevarías",
+      "llevaría",
+      "llevaríamos",
+      "llevaríais",
+      "llevarían"
+    ],
+    "subj": [
+      "lleve",
+      "lleves",
+      "lleve",
+      "llevemos",
+      "llevéis",
+      "lleven"
+    ],
+    "pret": [
+      "llevé",
+      "llevaste",
+      "llevó",
+      "llevamos",
+      "llevasteis",
+      "llevaron"
+    ],
+    "imp6": [
+      "llevaba",
+      "llevabas",
+      "llevaba",
+      "llevábamos",
+      "llevabais",
+      "llevaban"
+    ]
+  },
+  "traer": {
+    "present": [
+      "traigo",
+      "traes",
+      "trae",
+      "traemos",
+      "traéis",
+      "traen"
+    ],
+    "ger": "trayendo",
+    "pp": "traído",
+    "fut": [
+      "traeré",
+      "traerás",
+      "traerá",
+      "traeremos",
+      "traeréis",
+      "traerán"
+    ],
+    "cond": [
+      "traería",
+      "traerías",
+      "traería",
+      "traeríamos",
+      "traeríais",
+      "traerían"
+    ],
+    "subj": [
+      "traiga",
+      "traigas",
+      "traiga",
+      "traigamos",
+      "traigáis",
+      "traigan"
+    ],
+    "pret": [
+      "traje",
+      "trajiste",
+      "trajo",
+      "trajimos",
+      "trajisteis",
+      "trajeron"
+    ],
+    "imp6": [
+      "traía",
+      "traías",
+      "traía",
+      "traíamos",
+      "traíais",
+      "traían"
+    ]
+  },
+  "poner": {
+    "present": [
+      "pongo",
+      "pones",
+      "pone",
+      "ponemos",
+      "ponéis",
+      "ponen"
+    ],
+    "ger": "poniendo",
+    "pp": "puesto",
+    "fut": [
+      "pondré",
+      "pondrás",
+      "pondrá",
+      "pondremos",
+      "pondréis",
+      "pondrán"
+    ],
+    "cond": [
+      "pondría",
+      "pondrías",
+      "pondría",
+      "pondríamos",
+      "pondríais",
+      "pondrían"
+    ],
+    "subj": [
+      "ponga",
+      "pongas",
+      "ponga",
+      "pongamos",
+      "pongáis",
+      "pongan"
+    ],
+    "pret": [
+      "puse",
+      "pusiste",
+      "puso",
+      "pusimos",
+      "pusisteis",
+      "pusieron"
+    ],
+    "imp6": [
+      "ponía",
+      "ponías",
+      "ponía",
+      "poníamos",
+      "poníais",
+      "ponían"
+    ]
+  },
+  "abrir": {
+    "present": [
+      "abro",
+      "abres",
+      "abre",
+      "abrimos",
+      "abrís",
+      "abren"
+    ],
+    "ger": "abriendo",
+    "pp": "abierto",
+    "fut": [
+      "abriré",
+      "abrirás",
+      "abrirá",
+      "abriremos",
+      "abriréis",
+      "abrirán"
+    ],
+    "cond": [
+      "abriría",
+      "abrirías",
+      "abriría",
+      "abriríamos",
+      "abriríais",
+      "abrirían"
+    ],
+    "subj": [
+      "abra",
+      "abras",
+      "abra",
+      "abramos",
+      "abráis",
+      "abran"
+    ],
+    "pret": [
+      "abrí",
+      "abriste",
+      "abrió",
+      "abrimos",
+      "abristeis",
+      "abrieron"
+    ],
+    "imp6": [
+      "abría",
+      "abrías",
+      "abría",
+      "abríamos",
+      "abríais",
+      "abrían"
+    ]
+  },
+  "cerrar": {
+    "present": [
+      "cierro",
+      "cierras",
+      "cierra",
+      "cerramos",
+      "cerráis",
+      "cierran"
+    ],
+    "ger": "cerrando",
+    "pp": "cerrado",
+    "fut": [
+      "cerraré",
+      "cerrarás",
+      "cerrará",
+      "cerraremos",
+      "cerraréis",
+      "cerrarán"
+    ],
+    "cond": [
+      "cerraría",
+      "cerrarías",
+      "cerraría",
+      "cerraríamos",
+      "cerraríais",
+      "cerrarían"
+    ],
+    "subj": [
+      "cierre",
+      "cierres",
+      "cierre",
+      "cerremos",
+      "cerréis",
+      "cierren"
+    ],
+    "pret": [
+      "cerré",
+      "cerraste",
+      "cerró",
+      "cerramos",
+      "cerrasteis",
+      "cerraron"
+    ],
+    "imp6": [
+      "cerraba",
+      "cerrabas",
+      "cerraba",
+      "cerrábamos",
+      "cerrabais",
+      "cerraban"
+    ]
+  },
+  "empezar": {
+    "present": [
+      "empiezo",
+      "empiezas",
+      "empieza",
+      "empezamos",
+      "empezáis",
+      "empiezan"
+    ],
+    "ger": "empezando",
+    "pp": "empezado",
+    "fut": [
+      "empezaré",
+      "empezarás",
+      "empezará",
+      "empezaremos",
+      "empezaréis",
+      "empezarán"
+    ],
+    "cond": [
+      "empezaría",
+      "empezarías",
+      "empezaría",
+      "empezaríamos",
+      "empezaríais",
+      "empezarían"
+    ],
+    "subj": [
+      "empiece",
+      "empieces",
+      "empiece",
+      "empecemos",
+      "empecéis",
+      "empiecen"
+    ],
+    "pret": [
+      "empecé",
+      "empezaste",
+      "empezó",
+      "empezamos",
+      "empezasteis",
+      "empezaron"
+    ],
+    "imp6": [
+      "empezaba",
+      "empezabas",
+      "empezaba",
+      "empezábamos",
+      "empezabais",
+      "empezaban"
+    ]
+  },
+  "terminar": {
+    "present": [
+      "termino",
+      "terminas",
+      "termina",
+      "terminamos",
+      "termináis",
+      "terminan"
+    ],
+    "ger": "terminando",
+    "pp": "terminado",
+    "fut": [
+      "terminaré",
+      "terminarás",
+      "terminará",
+      "terminaremos",
+      "terminaréis",
+      "terminarán"
+    ],
+    "cond": [
+      "terminaría",
+      "terminarías",
+      "terminaría",
+      "terminaríamos",
+      "terminaríais",
+      "terminarían"
+    ],
+    "subj": [
+      "termine",
+      "termines",
+      "termine",
+      "terminemos",
+      "terminéis",
+      "terminen"
+    ],
+    "pret": [
+      "terminé",
+      "terminaste",
+      "terminó",
+      "terminamos",
+      "terminasteis",
+      "terminaron"
+    ],
+    "imp6": [
+      "terminaba",
+      "terminabas",
+      "terminaba",
+      "terminábamos",
+      "terminabais",
+      "terminaban"
+    ]
+  },
+  "esperar": {
+    "present": [
+      "espero",
+      "esperas",
+      "espera",
+      "esperamos",
+      "esperáis",
+      "esperan"
+    ],
+    "ger": "esperando",
+    "pp": "esperado",
+    "fut": [
+      "esperaré",
+      "esperarás",
+      "esperará",
+      "esperaremos",
+      "esperaréis",
+      "esperarán"
+    ],
+    "cond": [
+      "esperaría",
+      "esperarías",
+      "esperaría",
+      "esperaríamos",
+      "esperaríais",
+      "esperarían"
+    ],
+    "subj": [
+      "espere",
+      "esperes",
+      "espere",
+      "esperemos",
+      "esperéis",
+      "esperen"
+    ],
+    "pret": [
+      "esperé",
+      "esperaste",
+      "esperó",
+      "esperamos",
+      "esperasteis",
+      "esperaron"
+    ],
+    "imp6": [
+      "esperaba",
+      "esperabas",
+      "esperaba",
+      "esperábamos",
+      "esperabais",
+      "esperaban"
+    ]
+  },
+  "ayudar": {
+    "present": [
+      "ayudo",
+      "ayudas",
+      "ayuda",
+      "ayudamos",
+      "ayudáis",
+      "ayudan"
+    ],
+    "ger": "ayudando",
+    "pp": "ayudado",
+    "fut": [
+      "ayudaré",
+      "ayudarás",
+      "ayudará",
+      "ayudaremos",
+      "ayudaréis",
+      "ayudarán"
+    ],
+    "cond": [
+      "ayudaría",
+      "ayudarías",
+      "ayudaría",
+      "ayudaríamos",
+      "ayudaríais",
+      "ayudarían"
+    ],
+    "subj": [
+      "ayude",
+      "ayudes",
+      "ayude",
+      "ayudemos",
+      "ayudéis",
+      "ayuden"
+    ],
+    "pret": [
+      "ayudé",
+      "ayudaste",
+      "ayudó",
+      "ayudamos",
+      "ayudasteis",
+      "ayudaron"
+    ],
+    "imp6": [
+      "ayudaba",
+      "ayudabas",
+      "ayudaba",
+      "ayudábamos",
+      "ayudabais",
+      "ayudaban"
+    ]
+  },
+  "necesitar": {
+    "present": [
+      "necesito",
+      "necesitas",
+      "necesita",
+      "necesitamos",
+      "necesitáis",
+      "necesitan"
+    ],
+    "ger": "necesitando",
+    "pp": "necesitado",
+    "fut": [
+      "necesitaré",
+      "necesitarás",
+      "necesitará",
+      "necesitaremos",
+      "necesitaréis",
+      "necesitarán"
+    ],
+    "cond": [
+      "necesitaría",
+      "necesitarías",
+      "necesitaría",
+      "necesitaríamos",
+      "necesitaríais",
+      "necesitarían"
+    ],
+    "subj": [
+      "necesite",
+      "necesites",
+      "necesite",
+      "necesitemos",
+      "necesitéis",
+      "necesiten"
+    ],
+    "pret": [
+      "necesité",
+      "necesitaste",
+      "necesitó",
+      "necesitamos",
+      "necesitasteis",
+      "necesitaron"
+    ],
+    "imp6": [
+      "necesitaba",
+      "necesitabas",
+      "necesitaba",
+      "necesitábamos",
+      "necesitabais",
+      "necesitaban"
+    ]
+  },
+  "preferir": {
+    "present": [
+      "prefiero",
+      "prefieres",
+      "prefiere",
+      "preferimos",
+      "preferís",
+      "prefieren"
+    ],
+    "ger": "prefiriendo",
+    "pp": "preferido",
+    "fut": [
+      "preferiré",
+      "preferirás",
+      "preferirá",
+      "preferiremos",
+      "preferiréis",
+      "preferirán"
+    ],
+    "cond": [
+      "preferiría",
+      "preferirías",
+      "preferiría",
+      "preferiríamos",
+      "preferiríais",
+      "preferirían"
+    ],
+    "subj": [
+      "prefiera",
+      "prefieras",
+      "prefiera",
+      "prefiramos",
+      "prefiráis",
+      "prefieran"
+    ],
+    "pret": [
+      "preferí",
+      "preferiste",
+      "prefirió",
+      "preferimos",
+      "preferisteis",
+      "prefirieron"
+    ],
+    "imp6": [
+      "prefería",
+      "preferías",
+      "prefería",
+      "preferíamos",
+      "preferíais",
+      "preferían"
+    ]
+  },
+  "entender": {
+    "present": [
+      "entiendo",
+      "entiendes",
+      "entiende",
+      "entendemos",
+      "entendéis",
+      "entienden"
+    ],
+    "ger": "entendiendo",
+    "pp": "entendido",
+    "fut": [
+      "entenderé",
+      "entenderás",
+      "entenderá",
+      "entenderemos",
+      "entenderéis",
+      "entenderán"
+    ],
+    "cond": [
+      "entendería",
+      "entenderías",
+      "entendería",
+      "entenderíamos",
+      "entenderíais",
+      "entenderían"
+    ],
+    "subj": [
+      "entienda",
+      "entiendas",
+      "entienda",
+      "entendamos",
+      "entendáis",
+      "entiendan"
+    ],
+    "pret": [
+      "entendí",
+      "entendiste",
+      "entendió",
+      "entendimos",
+      "entendisteis",
+      "entendieron"
+    ],
+    "imp6": [
+      "entendía",
+      "entendías",
+      "entendía",
+      "entendíamos",
+      "entendíais",
+      "entendían"
+    ]
+  },
+  "creer": {
+    "present": [
+      "creo",
+      "crees",
+      "cree",
+      "creemos",
+      "creéis",
+      "creen"
+    ],
+    "ger": "creyendo",
+    "pp": "creído",
+    "fut": [
+      "creeré",
+      "creerás",
+      "creerá",
+      "creeremos",
+      "creeréis",
+      "creerán"
+    ],
+    "cond": [
+      "creería",
+      "creerías",
+      "creería",
+      "creeríamos",
+      "creeríais",
+      "creerían"
+    ],
+    "subj": [
+      "crea",
+      "creas",
+      "crea",
+      "creamos",
+      "creáis",
+      "crean"
+    ],
+    "pret": [
+      "creí",
+      "creíste",
+      "creyó",
+      "creímos",
+      "creísteis",
+      "creyeron"
+    ],
+    "imp6": [
+      "creía",
+      "creías",
+      "creía",
+      "creíamos",
+      "creíais",
+      "creían"
+    ]
+  },
+  "deber": {
+    "present": [
+      "debo",
+      "debes",
+      "debe",
+      "debemos",
+      "debéis",
+      "deben"
+    ],
+    "ger": "debiendo",
+    "pp": "debido",
+    "fut": [
+      "deberé",
+      "deberás",
+      "deberá",
+      "deberemos",
+      "deberéis",
+      "deberán"
+    ],
+    "cond": [
+      "debería",
+      "deberías",
+      "debería",
+      "deberíamos",
+      "deberíais",
+      "deberían"
+    ],
+    "subj": [
+      "deba",
+      "debas",
+      "deba",
+      "debamos",
+      "debáis",
+      "deban"
+    ],
+    "pret": [
+      "debí",
+      "debiste",
+      "debió",
+      "debimos",
+      "debisteis",
+      "debieron"
+    ],
+    "imp6": [
+      "debía",
+      "debías",
+      "debía",
+      "debíamos",
+      "debíais",
+      "debían"
+    ]
+  },
+  "recordar": {
+    "present": [
+      "recuerdo",
+      "recuerdas",
+      "recuerda",
+      "recordamos",
+      "recordáis",
+      "recuerdan"
+    ],
+    "ger": "recordando",
+    "pp": "recordado",
+    "fut": [
+      "recordaré",
+      "recordarás",
+      "recordará",
+      "recordaremos",
+      "recordaréis",
+      "recordarán"
+    ],
+    "cond": [
+      "recordaría",
+      "recordarías",
+      "recordaría",
+      "recordaríamos",
+      "recordaríais",
+      "recordarían"
+    ],
+    "subj": [
+      "recuerde",
+      "recuerdes",
+      "recuerde",
+      "recordemos",
+      "recordéis",
+      "recuerden"
+    ],
+    "pret": [
+      "recordé",
+      "recordaste",
+      "recordó",
+      "recordamos",
+      "recordasteis",
+      "recordaron"
+    ],
+    "imp6": [
+      "recordaba",
+      "recordabas",
+      "recordaba",
+      "recordábamos",
+      "recordabais",
+      "recordaban"
+    ]
+  },
+  "olvidar": {
+    "present": [
+      "olvido",
+      "olvidas",
+      "olvida",
+      "olvidamos",
+      "olvidáis",
+      "olvidan"
+    ],
+    "ger": "olvidando",
+    "pp": "olvidado",
+    "fut": [
+      "olvidaré",
+      "olvidarás",
+      "olvidará",
+      "olvidaremos",
+      "olvidaréis",
+      "olvidarán"
+    ],
+    "cond": [
+      "olvidaría",
+      "olvidarías",
+      "olvidaría",
+      "olvidaríamos",
+      "olvidaríais",
+      "olvidarían"
+    ],
+    "subj": [
+      "olvide",
+      "olvides",
+      "olvide",
+      "olvidemos",
+      "olvidéis",
+      "olviden"
+    ],
+    "pret": [
+      "olvidé",
+      "olvidaste",
+      "olvidó",
+      "olvidamos",
+      "olvidasteis",
+      "olvidaron"
+    ],
+    "imp6": [
+      "olvidaba",
+      "olvidabas",
+      "olvidaba",
+      "olvidábamos",
+      "olvidabais",
+      "olvidaban"
+    ]
+  },
+  "llamar": {
+    "present": [
+      "llamo",
+      "llamas",
+      "llama",
+      "llamamos",
+      "llamáis",
+      "llaman"
+    ],
+    "ger": "llamando",
+    "pp": "llamado",
+    "fut": [
+      "llamaré",
+      "llamarás",
+      "llamará",
+      "llamaremos",
+      "llamaréis",
+      "llamarán"
+    ],
+    "cond": [
+      "llamaría",
+      "llamarías",
+      "llamaría",
+      "llamaríamos",
+      "llamaríais",
+      "llamarían"
+    ],
+    "subj": [
+      "llame",
+      "llames",
+      "llame",
+      "llamemos",
+      "llaméis",
+      "llamen"
+    ],
+    "pret": [
+      "llamé",
+      "llamaste",
+      "llamó",
+      "llamamos",
+      "llamasteis",
+      "llamaron"
+    ],
+    "imp6": [
+      "llamaba",
+      "llamabas",
+      "llamaba",
+      "llamábamos",
+      "llamabais",
+      "llamaban"
+    ]
+  },
+  "tocar": {
+    "present": [
+      "toco",
+      "tocas",
+      "toca",
+      "tocamos",
+      "tocáis",
+      "tocan"
+    ],
+    "ger": "tocando",
+    "pp": "tocado",
+    "fut": [
+      "tocaré",
+      "tocarás",
+      "tocará",
+      "tocaremos",
+      "tocaréis",
+      "tocarán"
+    ],
+    "cond": [
+      "tocaría",
+      "tocarías",
+      "tocaría",
+      "tocaríamos",
+      "tocaríais",
+      "tocarían"
+    ],
+    "subj": [
+      "toque",
+      "toques",
+      "toque",
+      "toquemos",
+      "toquéis",
+      "toquen"
+    ],
+    "pret": [
+      "toqué",
+      "tocaste",
+      "tocó",
+      "tocamos",
+      "tocasteis",
+      "tocaron"
+    ],
+    "imp6": [
+      "tocaba",
+      "tocabas",
+      "tocaba",
+      "tocábamos",
+      "tocabais",
+      "tocaban"
+    ]
+  },
+  "jugar": {
+    "present": [
+      "juego",
+      "juegas",
+      "juega",
+      "jugamos",
+      "jugáis",
+      "juegan"
+    ],
+    "ger": "jugando",
+    "pp": "jugado",
+    "fut": [
+      "jugaré",
+      "jugarás",
+      "jugará",
+      "jugaremos",
+      "jugaréis",
+      "jugarán"
+    ],
+    "cond": [
+      "jugaría",
+      "jugarías",
+      "jugaría",
+      "jugaríamos",
+      "jugaríais",
+      "jugarían"
+    ],
+    "subj": [
+      "juegue",
+      "juegues",
+      "juegue",
+      "juguemos",
+      "juguéis",
+      "jueguen"
+    ],
+    "pret": [
+      "jugué",
+      "jugaste",
+      "jugó",
+      "jugamos",
+      "jugasteis",
+      "jugaron"
+    ],
+    "imp6": [
+      "jugaba",
+      "jugabas",
+      "jugaba",
+      "jugábamos",
+      "jugabais",
+      "jugaban"
+    ]
+  },
+  "correr": {
+    "present": [
+      "corro",
+      "corres",
+      "corre",
+      "corremos",
+      "corréis",
+      "corren"
+    ],
+    "ger": "corriendo",
+    "pp": "corrido",
+    "fut": [
+      "correré",
+      "correrás",
+      "correrá",
+      "correremos",
+      "correréis",
+      "correrán"
+    ],
+    "cond": [
+      "correría",
+      "correrías",
+      "correría",
+      "correríamos",
+      "correríais",
+      "correrían"
+    ],
+    "subj": [
+      "corra",
+      "corras",
+      "corra",
+      "corramos",
+      "corráis",
+      "corran"
+    ],
+    "pret": [
+      "corrí",
+      "corriste",
+      "corrió",
+      "corrimos",
+      "corristeis",
+      "corrieron"
+    ],
+    "imp6": [
+      "corría",
+      "corrías",
+      "corría",
+      "corríamos",
+      "corríais",
+      "corrían"
+    ]
+  },
+  "pensar": {
+    "present": [
+      "pienso",
+      "piensas",
+      "piensa",
+      "pensamos",
+      "pensáis",
+      "piensan"
+    ],
+    "ger": "pensando",
+    "pp": "pensado",
+    "fut": [
+      "pensaré",
+      "pensarás",
+      "pensará",
+      "pensaremos",
+      "pensaréis",
+      "pensarán"
+    ],
+    "cond": [
+      "pensaría",
+      "pensarías",
+      "pensaría",
+      "pensaríamos",
+      "pensaríais",
+      "pensarían"
+    ],
+    "subj": [
+      "piense",
+      "pienses",
+      "piense",
+      "pensemos",
+      "penséis",
+      "piensen"
+    ],
+    "pret": [
+      "pensé",
+      "pensaste",
+      "pensó",
+      "pensamos",
+      "pensasteis",
+      "pensaron"
+    ],
+    "imp6": [
+      "pensaba",
+      "pensabas",
+      "pensaba",
+      "pensábamos",
+      "pensabais",
+      "pensaban"
+    ]
+  },
+  "sentir": {
+    "present": [
+      "siento",
+      "sientes",
+      "siente",
+      "sentimos",
+      "sentís",
+      "sienten"
+    ],
+    "ger": "sintiendo",
+    "pp": "sentido",
+    "fut": [
+      "sentiré",
+      "sentirás",
+      "sentirá",
+      "sentiremos",
+      "sentiréis",
+      "sentirán"
+    ],
+    "cond": [
+      "sentiría",
+      "sentirías",
+      "sentiría",
+      "sentiríamos",
+      "sentiríais",
+      "sentirían"
+    ],
+    "subj": [
+      "sienta",
+      "sientas",
+      "sienta",
+      "sintamos",
+      "sintáis",
+      "sientan"
+    ],
+    "pret": [
+      "sentí",
+      "sentiste",
+      "sintió",
+      "sentimos",
+      "sentisteis",
+      "sintieron"
+    ],
+    "imp6": [
+      "sentía",
+      "sentías",
+      "sentía",
+      "sentíamos",
+      "sentíais",
+      "sentían"
+    ]
+  },
+  "parecer": {
+    "present": [
+      "parezco",
+      "pareces",
+      "parece",
+      "parecemos",
+      "parecéis",
+      "parecen"
+    ],
+    "ger": "pareciendo",
+    "pp": "parecido",
+    "fut": [
+      "pareceré",
+      "parecerás",
+      "parecerá",
+      "pareceremos",
+      "pareceréis",
+      "parecerán"
+    ],
+    "cond": [
+      "parecería",
+      "parecerías",
+      "parecería",
+      "pareceríamos",
+      "pareceríais",
+      "parecerían"
+    ],
+    "subj": [
+      "parezca",
+      "parezcas",
+      "parezca",
+      "parezcamos",
+      "parezcáis",
+      "parezcan"
+    ],
+    "pret": [
+      "parecí",
+      "pareciste",
+      "pareció",
+      "parecimos",
+      "parecisteis",
+      "parecieron"
+    ],
+    "imp6": [
+      "parecía",
+      "parecías",
+      "parecía",
+      "parecíamos",
+      "parecíais",
+      "parecían"
+    ]
+  },
+  "caer": {
+    "present": [
+      "caigo",
+      "caes",
+      "cae",
+      "caemos",
+      "caéis",
+      "caen"
+    ],
+    "ger": "cayendo",
+    "pp": "caído",
+    "fut": [
+      "caeré",
+      "caerás",
+      "caerá",
+      "caeremos",
+      "caeréis",
+      "caerán"
+    ],
+    "cond": [
+      "caería",
+      "caerías",
+      "caería",
+      "caeríamos",
+      "caeríais",
+      "caerían"
+    ],
+    "subj": [
+      "caiga",
+      "caigas",
+      "caiga",
+      "caigamos",
+      "caigáis",
+      "caigan"
+    ],
+    "pret": [
+      "caí",
+      "caíste",
+      "cayó",
+      "caímos",
+      "caísteis",
+      "cayeron"
+    ],
+    "imp6": [
+      "caía",
+      "caías",
+      "caía",
+      "caíamos",
+      "caíais",
+      "caían"
+    ]
+  },
+  "seguir": {
+    "present": [
+      "sigo",
+      "sigues",
+      "sigue",
+      "seguimos",
+      "seguís",
+      "siguen"
+    ],
+    "ger": "siguiendo",
+    "pp": "seguido",
+    "fut": [
+      "seguiré",
+      "seguirás",
+      "seguirá",
+      "seguiremos",
+      "seguiréis",
+      "seguirán"
+    ],
+    "cond": [
+      "seguiría",
+      "seguirías",
+      "seguiría",
+      "seguiríamos",
+      "seguiríais",
+      "seguirían"
+    ],
+    "subj": [
+      "siga",
+      "sigas",
+      "siga",
+      "sigamos",
+      "sigáis",
+      "sigan"
+    ],
+    "pret": [
+      "seguí",
+      "seguiste",
+      "siguió",
+      "seguimos",
+      "seguisteis",
+      "siguieron"
+    ],
+    "imp6": [
+      "seguía",
+      "seguías",
+      "seguía",
+      "seguíamos",
+      "seguíais",
+      "seguían"
+    ]
+  },
+  "preguntar": {
+    "present": [
+      "pregunto",
+      "preguntas",
+      "pregunta",
+      "preguntamos",
+      "preguntáis",
+      "preguntan"
+    ],
+    "ger": "preguntando",
+    "pp": "preguntado",
+    "fut": [
+      "preguntaré",
+      "preguntarás",
+      "preguntará",
+      "preguntaremos",
+      "preguntaréis",
+      "preguntarán"
+    ],
+    "cond": [
+      "preguntaría",
+      "preguntarías",
+      "preguntaría",
+      "preguntaríamos",
+      "preguntaríais",
+      "preguntarían"
+    ],
+    "subj": [
+      "pregunte",
+      "preguntes",
+      "pregunte",
+      "preguntemos",
+      "preguntéis",
+      "pregunten"
+    ],
+    "pret": [
+      "pregunté",
+      "preguntaste",
+      "preguntó",
+      "preguntamos",
+      "preguntasteis",
+      "preguntaron"
+    ],
+    "imp6": [
+      "preguntaba",
+      "preguntabas",
+      "preguntaba",
+      "preguntábamos",
+      "preguntabais",
+      "preguntaban"
+    ]
+  },
+  "intentar": {
+    "present": [
+      "intento",
+      "intentas",
+      "intenta",
+      "intentamos",
+      "intentáis",
+      "intentan"
+    ],
+    "ger": "intentando",
+    "pp": "intentado",
+    "fut": [
+      "intentaré",
+      "intentarás",
+      "intentará",
+      "intentaremos",
+      "intentaréis",
+      "intentarán"
+    ],
+    "cond": [
+      "intentaría",
+      "intentarías",
+      "intentaría",
+      "intentaríamos",
+      "intentaríais",
+      "intentarían"
+    ],
+    "subj": [
+      "intente",
+      "intentes",
+      "intente",
+      "intentemos",
+      "intentéis",
+      "intenten"
+    ],
+    "pret": [
+      "intenté",
+      "intentaste",
+      "intentó",
+      "intentamos",
+      "intentasteis",
+      "intentaron"
+    ],
+    "imp6": [
+      "intentaba",
+      "intentabas",
+      "intentaba",
+      "intentábamos",
+      "intentabais",
+      "intentaban"
+    ]
+  },
+  "meter": {
+    "present": [
+      "meto",
+      "metes",
+      "mete",
+      "metemos",
+      "metéis",
+      "meten"
+    ],
+    "ger": "metiendo",
+    "pp": "metido",
+    "fut": [
+      "meteré",
+      "meterás",
+      "meterá",
+      "meteremos",
+      "meteréis",
+      "meterán"
+    ],
+    "cond": [
+      "metería",
+      "meterías",
+      "metería",
+      "meteríamos",
+      "meteríais",
+      "meterían"
+    ],
+    "subj": [
+      "meta",
+      "metas",
+      "meta",
+      "metamos",
+      "metáis",
+      "metan"
+    ],
+    "pret": [
+      "metí",
+      "metiste",
+      "metió",
+      "metimos",
+      "metisteis",
+      "metieron"
+    ],
+    "imp6": [
+      "metía",
+      "metías",
+      "metía",
+      "metíamos",
+      "metíais",
+      "metían"
+    ]
+  },
+  "sacar": {
+    "present": [
+      "saco",
+      "sacas",
+      "saca",
+      "sacamos",
+      "sacáis",
+      "sacan"
+    ],
+    "ger": "sacando",
+    "pp": "sacado",
+    "fut": [
+      "sacaré",
+      "sacarás",
+      "sacará",
+      "sacaremos",
+      "sacaréis",
+      "sacarán"
+    ],
+    "cond": [
+      "sacaría",
+      "sacarías",
+      "sacaría",
+      "sacaríamos",
+      "sacaríais",
+      "sacarían"
+    ],
+    "subj": [
+      "saque",
+      "saques",
+      "saque",
+      "saquemos",
+      "saquéis",
+      "saquen"
+    ],
+    "pret": [
+      "saqué",
+      "sacaste",
+      "sacó",
+      "sacamos",
+      "sacasteis",
+      "sacaron"
+    ],
+    "imp6": [
+      "sacaba",
+      "sacabas",
+      "sacaba",
+      "sacábamos",
+      "sacabais",
+      "sacaban"
+    ]
+  },
+  "subir": {
+    "present": [
+      "subo",
+      "subes",
+      "sube",
+      "subimos",
+      "subís",
+      "suben"
+    ],
+    "ger": "subiendo",
+    "pp": "subido",
+    "fut": [
+      "subiré",
+      "subirás",
+      "subirá",
+      "subiremos",
+      "subiréis",
+      "subirán"
+    ],
+    "cond": [
+      "subiría",
+      "subirías",
+      "subiría",
+      "subiríamos",
+      "subiríais",
+      "subirían"
+    ],
+    "subj": [
+      "suba",
+      "subas",
+      "suba",
+      "subamos",
+      "subáis",
+      "suban"
+    ],
+    "pret": [
+      "subí",
+      "subiste",
+      "subió",
+      "subimos",
+      "subisteis",
+      "subieron"
+    ],
+    "imp6": [
+      "subía",
+      "subías",
+      "subía",
+      "subíamos",
+      "subíais",
+      "subían"
+    ]
+  },
+  "bajar": {
+    "present": [
+      "bajo",
+      "bajas",
+      "baja",
+      "bajamos",
+      "bajáis",
+      "bajan"
+    ],
+    "ger": "bajando",
+    "pp": "bajado",
+    "fut": [
+      "bajaré",
+      "bajarás",
+      "bajará",
+      "bajaremos",
+      "bajaréis",
+      "bajarán"
+    ],
+    "cond": [
+      "bajaría",
+      "bajarías",
+      "bajaría",
+      "bajaríamos",
+      "bajaríais",
+      "bajarían"
+    ],
+    "subj": [
+      "baje",
+      "bajes",
+      "baje",
+      "bajemos",
+      "bajéis",
+      "bajen"
+    ],
+    "pret": [
+      "bajé",
+      "bajaste",
+      "bajó",
+      "bajamos",
+      "bajasteis",
+      "bajaron"
+    ],
+    "imp6": [
+      "bajaba",
+      "bajabas",
+      "bajaba",
+      "bajábamos",
+      "bajabais",
+      "bajaban"
+    ]
+  },
+  "conducir": {
+    "present": [
+      "conduzco",
+      "conduces",
+      "conduce",
+      "conducimos",
+      "conducís",
+      "conducen"
+    ],
+    "ger": "conduciendo",
+    "pp": "conducido",
+    "fut": [
+      "conduciré",
+      "conducirás",
+      "conducirá",
+      "conduciremos",
+      "conduciréis",
+      "conducirán"
+    ],
+    "cond": [
+      "conduciría",
+      "conducirías",
+      "conduciría",
+      "conduciríamos",
+      "conduciríais",
+      "conducirían"
+    ],
+    "subj": [
+      "conduzca",
+      "conduzcas",
+      "conduzca",
+      "conduzcamos",
+      "conduzcáis",
+      "conduzcan"
+    ],
+    "pret": [
+      "conduje",
+      "condujiste",
+      "condujo",
+      "condujimos",
+      "condujisteis",
+      "condujeron"
+    ],
+    "imp6": [
+      "conducía",
+      "conducías",
+      "conducía",
+      "conducíamos",
+      "conducíais",
+      "conducían"
+    ]
+  },
+  "elegir": {
+    "present": [
+      "elijo",
+      "eliges",
+      "elige",
+      "elegimos",
+      "elegís",
+      "eligen"
+    ],
+    "ger": "eligiendo",
+    "pp": "elegido",
+    "fut": [
+      "elegiré",
+      "elegirás",
+      "elegirá",
+      "elegiremos",
+      "elegiréis",
+      "elegirán"
+    ],
+    "cond": [
+      "elegiría",
+      "elegirías",
+      "elegiría",
+      "elegiríamos",
+      "elegiríais",
+      "elegirían"
+    ],
+    "subj": [
+      "elija",
+      "elijas",
+      "elija",
+      "elijamos",
+      "elijáis",
+      "elijan"
+    ],
+    "pret": [
+      "elegí",
+      "elegiste",
+      "eligió",
+      "elegimos",
+      "elegisteis",
+      "eligieron"
+    ],
+    "imp6": [
+      "elegía",
+      "elegías",
+      "elegía",
+      "elegíamos",
+      "elegíais",
+      "elegían"
+    ]
+  },
+  "levantarse": {
+    "present": [
+      "levanto",
+      "levantas",
+      "levanta",
+      "levantamos",
+      "levantáis",
+      "levantan"
+    ],
+    "ger": "levantando",
+    "pp": "levantado",
+    "fut": [
+      "levantaré",
+      "levantarás",
+      "levantará",
+      "levantaremos",
+      "levantaréis",
+      "levantarán"
+    ],
+    "cond": [
+      "levantaría",
+      "levantarías",
+      "levantaría",
+      "levantaríamos",
+      "levantaríais",
+      "levantarían"
+    ],
+    "subj": [
+      "levante",
+      "levantes",
+      "levante",
+      "levantemos",
+      "levantéis",
+      "levanten"
+    ],
+    "pret": [
+      "levanté",
+      "levantaste",
+      "levantó",
+      "levantamos",
+      "levantasteis",
+      "levantaron"
+    ],
+    "imp6": [
+      "levantaba",
+      "levantabas",
+      "levantaba",
+      "levantábamos",
+      "levantabais",
+      "levantaban"
+    ]
+  },
+  "sentarse": {
+    "present": [
+      "siento",
+      "sientas",
+      "sienta",
+      "sentamos",
+      "sentáis",
+      "sientan"
+    ],
+    "ger": "sentando",
+    "pp": "sentado",
+    "fut": [
+      "sentaré",
+      "sentarás",
+      "sentará",
+      "sentaremos",
+      "sentaréis",
+      "sentarán"
+    ],
+    "cond": [
+      "sentaría",
+      "sentarías",
+      "sentaría",
+      "sentaríamos",
+      "sentaríais",
+      "sentarían"
+    ],
+    "subj": [
+      "siente",
+      "sientes",
+      "siente",
+      "sentemos",
+      "sentéis",
+      "sienten"
+    ],
+    "pret": [
+      "senté",
+      "sentaste",
+      "sentó",
+      "sentamos",
+      "sentasteis",
+      "sentaron"
+    ],
+    "imp6": [
+      "sentaba",
+      "sentabas",
+      "sentaba",
+      "sentábamos",
+      "sentabais",
+      "sentaban"
+    ]
+  },
+  "ponerse": {
+    "present": [
+      "pongo",
+      "pones",
+      "pone",
+      "ponemos",
+      "ponéis",
+      "ponen"
+    ],
+    "ger": "poniendo",
+    "pp": "puesto",
+    "fut": [
+      "pondré",
+      "pondrás",
+      "pondrá",
+      "pondremos",
+      "pondréis",
+      "pondrán"
+    ],
+    "cond": [
+      "pondría",
+      "pondrías",
+      "pondría",
+      "pondríamos",
+      "pondríais",
+      "pondrían"
+    ],
+    "subj": [
+      "ponga",
+      "pongas",
+      "ponga",
+      "pongamos",
+      "pongáis",
+      "pongan"
+    ],
+    "pret": [
+      "puse",
+      "pusiste",
+      "puso",
+      "pusimos",
+      "pusisteis",
+      "pusieron"
+    ],
+    "imp6": [
+      "ponía",
+      "ponías",
+      "ponía",
+      "poníamos",
+      "poníais",
+      "ponían"
+    ]
+  }
+}

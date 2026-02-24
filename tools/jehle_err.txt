@@ -1,0 +1,7 @@
+Downloading Jehle CSV...
+Downloaded 11467 lines
+Loaded 637 verbs from database
+
+NOT FOUND in Jehle: ['cambiar']
+
+Extracted data for 77 verbs

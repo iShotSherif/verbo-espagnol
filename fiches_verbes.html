@@ -46,7 +46,7 @@
     }
 
     /* ── Flip Card ── */
-    :root { --card-w: 340px; --card-h: 275px; }
+    :root { --card-w: 340px; --card-h: 310px; }
     .flip-card {
       width: var(--card-w); height: var(--card-h);
       perspective: 1200px; position: relative;
@@ -128,9 +128,11 @@
     .tenses {
       background: rgba(255,255,255,.08); border-radius: 7px;
       padding: 5px 9px; font-size: 0.72rem; margin: 3px 0;
-      color: rgba(255,255,255,.8);
+      color: rgba(255,255,255,.8); line-height: 1.7;
     }
     .tenses b { color: rgba(255,255,255,.45); font-weight: 400; }
+    .tenses .t-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .tenses .t-sep { color: rgba(255,255,255,.2); }
     .examples { border-top: 1px solid rgba(255,255,255,.12); padding-top: 6px; margin-top: 4px; }
     .ex { font-size: 0.75rem; color: rgba(255,255,255,.72); font-style: italic; margin: 2px 0; }
 
@@ -208,6 +210,7 @@
 <div id="print-section" class="print-section"></div>
 
 <script src="data/verbs.js"></script>
+<script src="data/conj_extra.js"></script>
 <script>
 const PRONOUNS = ['yo','tú','él/ella','nosotros','vosotros','ellos'];
 
@@ -230,6 +233,11 @@ function buildCard(v, i) {
   const leftPro   = PRONOUNS.slice(0, 3);
   const rightPro  = PRONOUNS.slice(3);
   const groupLabel = GROUP_LABELS[v.g] || v.g;
+  const extra = CONJ_EXTRA[v.inf.toLowerCase()];
+
+  const extraTenses = extra ? `
+    <div class="t-row"><b>Fut.:</b> ${extra.fut[0]} &nbsp;<span class="t-sep">|</span>&nbsp; <b>Cond.:</b> ${extra.cond[0]}</div>
+    <div class="t-row"><b>Subj.:</b> ${extra.subj[0]} &nbsp;<span class="t-sep">|</span>&nbsp; <b>Gér.:</b> ${extra.ger} &nbsp;<span class="t-sep">|</span>&nbsp; <b>PP:</b> ${extra.pp}</div>` : '';
 
   return `
   <div class="flip-card${isLearned ? ' learned' : ''}" id="c${i}" data-inf="${v.inf}" data-g="${v.g}">
@@ -254,7 +262,10 @@ function buildCard(v, i) {
           ${leftPro.map((p,j) => `<div class="cg-pro">${p}</div><div class="cg-form">${leftConj[j]}</div>`).join('')}
           ${rightPro.map((p,j) => `<div class="cg-pro">${p}</div><div class="cg-form">${rightConj[j]}</div>`).join('')}
         </div>
-        <div class="tenses"><b>Imp.:</b> ${v.imp} &nbsp;|&nbsp; <b>Pret.:</b> ${v.ps}</div>
+        <div class="tenses">
+          <div class="t-row"><b>Imp.:</b> ${v.imp} &nbsp;<span class="t-sep">|</span>&nbsp; <b>Pret.:</b> ${v.ps}</div>
+          ${extraTenses}
+        </div>
         <div class="examples">
           ${v.ex.map(e => `<div class="ex">&#9658; ${e}</div>`).join('')}
         </div>
@@ -372,7 +383,7 @@ function buildPrintCard(v, side) {
         ${leftPro.map((p,j)  => `<div class="pc-cgp">${p}</div><div class="pc-cgf">${leftConj[j]}</div>`).join('')}
         ${rightPro.map((p,j) => `<div class="pc-cgp">${p}</div><div class="pc-cgf">${rightConj[j]}</div>`).join('')}
       </div>
-      <div class="pc-tenses">Imp.: ${v.imp} &nbsp;|&nbsp; Pret.: ${v.ps}</div>
+      <div class="pc-tenses">Imp.: ${v.imp} &nbsp;|&nbsp; Pret.: ${v.ps}${(() => { const x = CONJ_EXTRA[v.inf.toLowerCase()]; return x ? ` &nbsp;|&nbsp; Fut.: ${x.fut[0]} &nbsp;|&nbsp; Subj.: ${x.subj[0]} &nbsp;|&nbsp; PP: ${x.pp}` : ''; })()}</div>
       <div class="pc-exs">
         ${v.ex.map(e => `<div class="pc-ex">&#9658; ${e}</div>`).join('')}
       </div>
